@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.first-view{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url('assets/images/cod9.jpg');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: -15% 20%;
+    background-size: 100% 100%;
+}
+
+nav{
+    width: 100%;
+    position: sticky;
+    margin:20px auto;
+    z-index: 1;
+    display:flex;
+    align-items: center;
+}
+
+.header01{
+    flex-basis: 30%;
+    padding-left: 30px;
+    font-family:"Work Sans";
+    font-size: 24px;
+    font-style:bold;
+    text-decoration: none;
+}
+
+.header01 h1{
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: 35px;
+    color: #898407;
+    font-family:"Vollkorn SC";
+}
+
+.nav-links{
+    flex: 1;
+    font-size: 13px;
+    text-align: right;
+    padding-left: 50px;
+    margin-top: -20px;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family:"Vollkorn SC";
+    font-size: 15px;
+}
