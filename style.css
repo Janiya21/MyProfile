@@ -4,20 +4,25 @@
     /*font-family: sans-serif;*/
 }
 
-.first-view{
+.view{
     width: 100%;
     height: 100vh;
     position: relative;
-    margin-bottom: 10px;
     overflow: hidden;
+    background-size: 100% 100%;
+}
+
+/* --------------- first view ------------------ */
+
+.first{
+    margin-bottom: 10px;
     background-image: url('assets/images/cod9.jpg');
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-position: -15% 20%;
-    background-size: 100% 100%;
 }
 
-nav{
+.first nav{
     width: 100%;
     position: sticky;
     margin:20px auto;
@@ -86,7 +91,7 @@ nav{
     color: #bad3f1;
 }
 
-.information{
+.first .information{
     width: 1000px;
     height: 1000px;
     position:absolute;
@@ -122,15 +127,10 @@ nav{
     color: thistle;
 }
 
-/*--------- Second view ------------*/
+/*------------ Second view --------------*/
 
-.second-view{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+.second{
     background-position: -15% 20%;
-    background-size: 100% 100%;
     background-color: #000000;
     color: white;
 }
@@ -145,9 +145,9 @@ nav{
     text-decoration: none;
 }
 
-.sub-header{
+.second  .sub-header{
     height: 50px;
-    background-color: #333333;
+    background-color: #262626;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -159,9 +159,9 @@ nav{
     padding-top: 10px;
 }
 
-#details{
+.second #details{
     margin-top: 10px;
-    background-color:#333333;
+    background-color:#262626;
     position: absolute;
     height: 80%;
 }
@@ -248,16 +248,12 @@ nav{
     transition: 0s
 }
 
-/*--------- Third view ------------*/
+/*-------------- Third view -------------*/
 
-.third-view{
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+.third{
     background-position: -15% 20%;
-    background-size: 100% 100%;
     background-color: #000000;
+    color: white;
 }
 
 .header03 h1{
@@ -353,3 +349,59 @@ nav{
 .progress ul li:nth-child(2) .fa{
     background: deepskyblue;
 }
+
+/*-------------- Fourth view -------------*/
+
+.fourth{
+    background-position: -15% 20%;
+    background-color: #000000;
+    color: white;
+}
+
+.header04 h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-basis: 30%;
+    padding-left: 30px;
+    font-family: "Work Sans", serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.fourth main{
+    top: 10px;
+    color: #ffffff;
+    overflow-y: scroll;
+    width: 900px;
+    max-height: 550px;
+    min-height: 500px;
+    float: right;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.tech{
+    height: 150px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.tech img{
+    width: 15%;
+    float: left;
+}
+
+.tech ul{
+    width: 40%;
+    margin-top: 25px;
+    position: relative;
+    left: 50px;
+}
+
+.tech div{
+    position: relative;
+    width: 40%;
+    margin-left: 60px;
+    margin-top: 50px;
+}
+
