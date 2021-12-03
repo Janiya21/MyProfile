@@ -147,7 +147,7 @@
 
 .second  .sub-header{
     height: 50px;
-    background-color: #262626;
+    background-color: #0c0c0c;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -161,7 +161,7 @@
 
 .second #details{
     margin-top: 10px;
-    background-color:#262626;
+    background-color: #1c1c1c;
     position: absolute;
     height: 80%;
 }
@@ -356,6 +356,8 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("assets/images/lap7.jpg");
+    backdrop-filter: blur(8px);
 }
 
 .header04 h1{
@@ -373,35 +375,63 @@
     color: #ffffff;
     overflow-y: scroll;
     width: 900px;
-    max-height: 550px;
-    min-height: 500px;
+    max-height: 520px;
     float: right;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     position: relative;
 }
 
 .tech{
-    height: 150px;
+    min-height: 160px;
     display: flex;
     flex-grow: 1;
 }
 
 .tech img{
-    width: 15%;
+    /*width: 15%;*/
     float: left;
+    height: 100%;
+    padding-top: 70px;
+    background-color: transparent;
 }
 
 .tech ul{
     width: 40%;
-    margin-top: 25px;
+    margin-top: 60px;
+    padding-left: 60px;
     position: relative;
-    left: 50px;
 }
 
-.tech div{
+.tech .skill{
     position: relative;
-    width: 40%;
-    margin-left: 60px;
-    margin-top: 50px;
+    height: 100%;
+}
+
+#number, #number2, #number3 , #number4, #number5, #number6{
+    font-weight: bolder;
+    color: blanchedalmond;
+    position: relative;
+    left: 65px;
+    top: 95px;
+    z-index: 1;
+}
+
+circle{
+    stroke: url(#GradientColor);
+    stroke-width: 13px;
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: relative;
+    margin-top: 10px;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 140;
+    }
 }
 
