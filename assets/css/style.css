@@ -1,0 +1,781 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.view{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+    font-size: 20px;
+}
+
+/* --------------- first view ------------------ */
+
+.first{
+    margin-bottom: 1%;
+    background-image: url('../images/cod9.jpg');
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    background-position: -15% 20%;
+}
+
+.first nav{
+    width: 100%;
+    position: sticky;
+    margin: 1.6% auto;
+    z-index: 1;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header01{
+    flex-basis: 30%;
+    padding-left: 2%;
+    font-family: "Work Sans", serif;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+.header01 h2{
+    padding-left: 3%;
+    padding-top: 1%;
+    font-size: 1.1em;
+}
+
+.header01 h1{
+    padding-left: 15%;
+    padding-top: 2%;
+    font-size: 1.6em;
+    color: #898407;
+    font-family: "Vollkorn SC", serif;
+}
+
+nav .nav-links{
+    flex: 1;
+    width: 40%;
+    text-align: right;
+    right: 1%;
+    position: relative;
+    bottom: 1em;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 2.6%;
+}
+
+.nav-links ul li a{
+    color: #cdcbcb;
+    position: relative;
+    text-decoration: none;
+    font-family: "Vollkorn SC", serif;
+    font-size: 0.8em;
+}
+
+.nav-links ul li a:after{
+    content: "";
+    position: absolute;
+    background-color: #bad3f1;
+    height: 3px;
+    width: 0;
+    left: 3px;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover:after{
+    width: 100%;
+    color: #bad3f1;
+    font-size: 30px;
+}
+
+.nav-links ul li a:hover{
+    color: #bad3f1;
+}
+
+.first .information{
+    width: 67.5%;
+    height: 128%;
+    position:absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+/*.information article{
+    margin-left: 30px;
+}
+
+.information article p{
+    margin-top: 8px;
+    line-height: 25px;
+    position: relative;
+}*/
+
+/*.information .overlay{
+    width: 5%;
+    border-top: 25em solid white;
+    border-right: 25em solid transparent;
+    border-bottom: 25em solid white;
+    border-left: 25em solid white;
+    position: relative;
+}*/
+
+.myPhoto{
+    width: 30%;
+    height: 32%;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid white;
+    border-left: 500px solid white;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    border-radius: 50%;
+    background: transparent;
+    transform: rotate(0deg);
+    transition: 1.7s;
+}
+
+.overlay h1{
+    color: thistle;
+}
+
+/*.feature img{
+    width:70px;
+    height: 70px;
+}
+
+.feature{
+    position: absolute;
+    display: flex;
+    color: white;
+}
+
+.feature article{
+    margin-left: 30px;
+}
+
+.feature article p{
+    margin-top: 8px;
+    line-height: 25px;
+    position: relative;
+    font-family:"Vollkorn SC";
+}
+
+.one{
+    top: 450px;
+    padding-left: 670px;
+    text-align: start;
+}
+
+.one img{
+    padding-top:16px;
+}
+
+.two{
+    top: 180px;
+    left: 380px;
+    transform: rotate(-90deg);
+}
+
+.three{
+    bottom: 450px;
+    left: 70px;
+    transform: rotate(-180deg);
+}
+
+.four{
+    bottom: 140px;
+    right: 330px;
+    transform: rotate(-270deg);
+}
+
+.controls{
+    position: absolute;
+    right: 11.7%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+
+}
+
+#upBtn{
+    width: 25px;
+    cursor: pointer;
+}
+
+#downBtn{
+    width: 25px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.feature h1{
+    font-size: 25px;
+    font-family: Fantasy;
+    letter-spacing: 0.8pt;
+}*/
+/*------------ Second view --------------*/
+
+.second{
+    background-position: -15% 20%;
+    background-color: #000000;
+    color: white;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/lap9.jpg");
+    backdrop-filter: blur(8px);
+}
+
+.header02 h1{
+    margin-top: 0.5em;
+    margin-bottom: 1%;
+    flex-basis: 30%;
+    padding-left: 3%;
+    font-family: "Work Sans", serif;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.second .sub-header{
+    height: 4%;
+    background-color: #0c0c0c;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.sub-header h2{
+    text-align: center;
+    font-family: "Work Sans", serif;
+    font-size: 1em;
+    padding-top: 1%;
+}
+
+.second #details{
+    margin-top: 1%;
+    background-color: transparent;
+    position: absolute;
+    height: 80%;
+}
+
+.split {
+    height: 100%;
+    width: 100%;
+    position:relative;
+    padding-top: 2%;
+}
+
+.left {
+    left: 4%;
+    width: 36%;
+    float: left;
+}
+
+.right {
+    right: 4%;
+    width: 55%;
+    float: right;
+}
+
+.right:before{
+    content: '';
+    background: #fff;
+    position: absolute;
+    z-index: -1;
+    transform: skew(2deg,2deg);
+}
+
+.right p{
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
+    font-family: "Vollkorn SC", serif;
+    text-align: justify;
+    font-size: 0.75em;
+}
+
+.left img{
+    border-radius: 8px;
+}
+
+.split button{
+    left: 70%;
+    top: 60px; /*here*/
+    position: relative;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #666363;
+    height: 40px; /*here*/
+    width: 160px; /*here*/
+}
+
+#details .slide-left{
+    width:2%;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 3px; /*here*/
+    top: 43%;
+    background-color: #404040;
+    border: unset;
+}
+
+#details .slide-right{
+    width:2%;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 10px; /*here*/
+    top: 43%;
+    background-color: #404040;
+    border: unset;
+}
+
+.slide-left::after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+/*-------------- Third view -------------*/
+
+.third{
+    background-position: -15% 20%;
+    background-color: #000000;
+    color: white;
+}
+
+.header03 h1{
+    margin-top: 0.5em;
+    margin-bottom: 1%;
+    flex-basis: 30%;
+    padding-left: 3%;
+    font-family: "Work Sans", serif;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.progress{
+    margin: 100px auto; /*here*/
+    position: relative;
+    height: 60%;
+}
+
+.progress ul{
+    text-align: center;
+    background: black;
+    position: relative;
+    height: 80%;
+}
+
+.progress ul li{
+    display: inline-block;
+    width: 14%;
+    height: 95%;
+    position: relative;
+    margin: 0 30px 20px 0; /*here*/
+}
+
+.progress img{
+    margin-bottom: 5%;
+}
+
+.progress ul li h2{
+    position: relative;
+    color: white;
+    margin: 10px 5px 25px 0; /*here*/
+    /*top: 30px;*/
+}
+
+.progress ul li p{
+    position: relative;
+    text-align: center;
+    background: #000000;
+    height: 40%;
+    color: #c4c4c4;
+}
+
+.progress ul li .fa{
+    background: #cccccc;
+    width: 1.3em;
+    height: 1.1em;
+    color: #ffffff;
+    border-radius: 40%;
+    padding-top: 0.2em;
+}
+
+.progress ul li .fa-check-square-o{
+
+}
+
+.progress ul li .fa::after{
+    content: '';
+    background: #c4c4c4;
+    height: 1.8%;
+    width: 260px;
+    display: block;
+    position: relative;
+    top: -8px;
+    left: 6px;
+    z-index: -1;
+}
+
+.progress ul li:nth-child(3) .fa{
+    background-color: red;
+}
+
+.progress ul li:nth-child(5) .fa::after{
+    width: 140px;
+}
+
+
+.progress ul li:nth-child(1) .fa::after, .progress ul li:nth-child(2) .fa::after{
+    background-color: deepskyblue;
+}
+
+.progress ul li:nth-child(3) .fa::after{
+    background-color: red;
+}
+
+.progress ul li:nth-child(1) .fa,
+.progress ul li:nth-child(2) .fa{
+    background: deepskyblue;
+}
+
+/*-------------- Fourth view -------------*/
+
+.fourth{
+    background-position: -15% 20%;
+    background-color: #000000;
+    color: white;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/lap7.jpg");
+    backdrop-filter: blur(8px);
+}
+
+.header04 h1{
+    margin-top: 0.5em;
+    margin-bottom: 1%;
+    flex-basis: 30%;
+    padding-left: 3%;
+    font-family: "Work Sans", serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.fourth main{
+    top: 10px;
+    color: #ffffff;
+    overflow-y: scroll;
+    width: 930px;
+    max-height: 650px;
+    float: right;
+    background-color: transparent;
+    position: relative;
+}
+
+.fourth main::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #bbbbbb;
+}
+
+.fourth main::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #6e74b1;
+}
+
+.fourth main::-webkit-scrollbar-thumb
+{
+    background-color: #687dc6;
+    border: 2px solid #555555;
+}
+
+.tech{
+    min-height: 160px;
+    display: flex;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+.tech img{
+    /*width: 15%;*/
+    float: left;
+    height: 100%;
+    padding-top: 70px;
+    background-color: transparent;
+}
+
+.tech ul{
+    width: 40%;
+    margin-top: 60px;
+    padding-left: 60px;
+    position: relative;
+}
+
+.tech .skill{
+    position: relative;
+    height: 100%;
+}
+
+#number, #number2, #number3 , #number4, #number5, #number6{
+    font-weight: bolder;
+    color: blanchedalmond;
+    position: relative;
+    left: 65px;
+    top: 95px;
+    z-index: 1;
+}
+
+circle{
+    stroke: url(#GradientColor);
+    stroke-width: 13px;
+    stroke-dasharray: 410;
+    stroke-dashoffset: 410;
+    animation: anim 2s linear forwards;
+}
+
+svg{
+    position: relative;
+    margin-top: 10px;
+}
+
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 140;
+    }
+}
+
+/*------------ Fifth view --------------*/
+
+.fifth{
+    background-position: -15% 20%;
+    background-color: #000000;
+    color: white;
+}
+
+.header05 h1{
+    margin-top: 0.5em;
+    margin-bottom: 1%;
+    flex-basis: 30%;
+    padding-left: 3%;
+    font-family: "Work Sans", serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.fifth main{
+    top: 10px;
+    color: #ffffff;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 1200px;
+    height: 90%;
+    background-color: transparent;
+    white-space: nowrap;
+
+    /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*gap: 10px;*/
+    /*grid-auto-rows: minmax(150px, auto);*/
+
+    position: relative;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 5px;
+    left: 140px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.fifth main::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.fifth main::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.fifth main::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border: 2px solid #555555;
+}
+
+.fifth main div{
+    position: relative;
+    height: 100%;
+}
+
+.fifth main div img{
+    position: relative;
+    padding: 50px 0 10px 30px;
+}
+
+/*------------ sixth view --------------*/
+
+.sixth{
+    background-position: -15% 20%;
+    background-color: #000000;
+    color: white;
+}
+
+.header06 h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-basis: 30%;
+    padding-left: 30px;
+    font-family: "Work Sans", serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+/*------------ seventh view --------------*/
+
+.seven{
+    background-position: -15% 20%;
+    background-color: #000000;
+    color: white;
+    width: 100%;
+    height: 113vh;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+
+.header07 h1{
+    margin-top: 0.5em;
+    margin-bottom: 1%;
+    flex-basis: 30%;
+    padding-left: 3%;
+    font-family: "Work Sans", serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.seven main{
+    height: 80%;
+}
+
+.seven .side-left{
+    float: left;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+.seven .side-right{
+    float: right;
+    position: relative;
+    padding-top: 50px;
+}
+
+.seven .side-right p{
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: "Vollkorn SC", serif;
+    text-align: justify;
+    font-size: 15px;
+    position: relative;
+    right: 20px;
+    top: 30px;
+}
+
+.seven .side-right div a{
+    position: relative;
+    right: 20px;
+    top: 100px;
+}
+
+.seven .side-left #btn-call-me{
+    position: relative;
+    left: 40px;
+    top: 25px;
+    width: 400px;
+    background-color: rgba(252, 208, 90, 0.66);
+    border-color: rgba(252, 207, 116, 0.78);
+    color: white;
+    height: 35px;
+}
+
+.seven .side-left #btn-gmail{
+    position: relative;
+    left: 40px;
+    top: 50px;
+    width: 400px;
+    background-color: rgba(199, 75, 75, 0.68);
+    border-color: rgba(194, 87, 87, 0.8);
+    color: white;
+    height: 35px;
+}
+
+.seven .side-left #btn-whatsapp{
+    position: relative;
+    left: 40px;
+    top: 75px;
+    width: 400px;
+    background-color: rgba(54, 168, 68, 0.82);
+    border-color: rgba(74, 182, 43, 0.85);
+    color: white;
+    height: 35px;
+}
+
+.seven > hr{
+    position: relative;
+    bottom: 30px;
+}
+
+.seven footer p:nth-child(2){
+    position: relative;
+    top: 9px;
+}
+
+.seven footer{
+    position: absolute;
+    height: 70px;
+    bottom: 35px;
+    text-align: center;
+    padding-left: 28%;
+}
+
+.seven main img{
+    position: relative;
+    left: 40px;
+}
