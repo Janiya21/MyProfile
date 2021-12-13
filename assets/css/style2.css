@@ -15,7 +15,7 @@
 /* --------------- first view ------------------ */
 
 .first{
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     background-image: url('../images/cod9.jpg');
     background-repeat: no-repeat;
     background-attachment: inherit;
@@ -25,7 +25,7 @@
 .first nav{
     width: 100%;
     position: sticky;
-    margin:20px auto;
+    margin: 1.6% auto;
     z-index: 1;
     display:flex;
     align-items: center;
@@ -33,10 +33,11 @@
 }
 
 .header01{
-    flex-basis: 30%;
-    padding-left: 30px;
+    /*width: 40%;*/
+    flex-basis: 40%;
+    padding-left: 2%;
     font-family: "Work Sans", serif;
-    font-size: 24px;
+    font-size: 1.4em;
     text-decoration: none;
 }
 
@@ -47,25 +48,26 @@
 }
 
 .header01 h1{
-    padding-left: 40px;
-    padding-top: 20px;
-    font-size: 35px;
+    padding-left: 15%;
+    padding-top: 4%;
+    font-size: 1.6em;
     color: #898407;
-    font-family: "Vollkorn SC", serif;
+    font-family: "Vollkorn SC", serif;;
 }
 
 .nav-links{
     flex: 1;
-    font-size: 13px;
+    max-width: 56%;
     text-align: right;
-    padding-left: 50px;
-    margin-top: -20px;
+    position: relative;
+    right: 1%;
+    bottom: 1em;
 }
 
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 2.6%;
 }
 
 .nav-links ul li a{
@@ -73,7 +75,7 @@
     position: relative;
     text-decoration: none;
     font-family: "Vollkorn SC", serif;
-    font-size: 15px;
+    font-size: 0.8em;
 }
 
 .nav-links ul li a:after{
@@ -97,8 +99,17 @@
     color: #bad3f1;
 }
 
-.first .information{
+/*.first .information{
     width: 1000px;
+    height: 1000px;
+    position:absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}*/
+
+.first .information{
+    width: 67.5%;
     height: 1000px;
     position:absolute;
     top: 50%;
@@ -107,23 +118,23 @@
 }
 
 .myPhoto{
-    width: 300px;
-    height: 300px;
+    width: 30%;
+    height: 30%;
     position: absolute;
     border-radius: 50%;
     top: 50%;
     left: 35%;
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: 1;;
 }
 
 .overlay{
     width: 0;
     height: 0;
-    border-top: 500px solid white;
-    border-right: 500px solid transparent;
-    border-bottom: 500px solid white;
-    border-left: 500px solid white;
+    border-top: 30em solid white;
+    border-right: 30em solid transparent;
+    border-bottom: 30em solid white;
+    border-left: 30em solid white;
     position: absolute;
     left: 0;
     top: 0;
@@ -144,34 +155,38 @@
 }
 
 .header02 h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.5em;
+    margin-bottom: 1%;
     flex-basis: 30%;
-    padding-left: 30px;
+    padding-left: 3%;
     font-family: "Work Sans", serif;
-    font-size: 24px;
+    font-size: 1.3em;
     text-decoration: none;
 }
 
 .second  .sub-header{
-    height: 50px;
+    height: 4%;
     background-color: #0c0c0c;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .sub-header h2{
     text-align: center;
     font-family: "Work Sans", serif;
-    font-size: 22px;
-    padding-top: 10px;
+    font-size: 1.2em;
+    padding-top: 1%;
 }
 
 .second #details{
-    margin-top: 10px;
+    margin-top: 1%;
     background-color: transparent;
     position: absolute;
     height: 80%;
+}
+
+.second .mySlides{
+    height: 100%;
 }
 
 .split {
@@ -191,6 +206,8 @@
     right: 4%;
     width: 50%;
     float: right;
+    height: 100%;
+    font-size: 20px;
 }
 
 .right:before{
@@ -202,11 +219,11 @@
 }
 
 .right p{
-    letter-spacing: 2px;
-    word-spacing: 4px;
+    letter-spacing: 0.2em;
+    word-spacing: 0.3em;
     font-family: "Vollkorn SC", serif;
     text-align: justify;
-    font-size: 15px;
+    font-size: 0.7em;
 }
 
 .left img{
@@ -214,19 +231,19 @@
 }
 
 .split button{
-    left: 420px;
-    top: 60px;
+    left: 70%;
+    top: 10%; /*here*/
     position: relative;
     border: none;
     color: white;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.8em;
     margin: 4px 2px;
     cursor: pointer;
     background-color: #666363;
-    height: 35px;
-    width: 160px;
+    height: 6%; /*here*/
+    width: 20%; /*here*/
 }
 
 #details .slide-left{
@@ -265,23 +282,27 @@
 }
 
 .header03 h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0.5em;
+    margin-bottom: 1%;
     flex-basis: 30%;
-    padding-left: 30px;
+    padding-left: 3%;
     font-family: "Work Sans", serif;
-    font-size: 24px;
+    font-size: 1.3em;
     text-decoration: none;
     color: white;
 }
 
 .progress{
-    margin: 100px auto;
+    margin: 100px auto; /*here*/
+    position: relative;
+    height: 60%;
 }
 
 .progress ul{
     text-align: center;
     background: black;
+    position: relative;
+    height: 80%;
 }
 
 .progress ul li{
