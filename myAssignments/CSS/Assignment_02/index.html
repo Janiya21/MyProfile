@@ -4,198 +4,170 @@
     <meta charset="UTF-8">
     <title>Responsive Design 01</title>
     <link href="assets/css/normalize.css" rel="stylesheet">
+
+
     <style>
 
-        body > section {
-            width: 50vw;
-            height: 50vh;
-            position: absolute;
-            z-index: -1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        body > section:nth-child(1) {
-            background: red;
-            left: 0;
-            top: 0;
-        }
-
-        body > section:nth-child(2) {
-            background: green;
-            right: 0;
-            top: 0;
-        }
-
-        body > section:nth-child(3) {
-            background: orange;
-            bottom: 0;
-            left: 0;
-        }
-
-        body > section:nth-child(4) {
-            background: deeppink;
-            right: 0;
-            bottom: 0;
-        }
-
-        body > section > div:nth-child(2) {
-            border: 2px solid #efefef;
-            width: 250px;
-            height: 250px;
-            z-index: 1;
+        body > header {
             position: relative;
-            border-radius: 50%;
-            background-color: white;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 80px;
+            box-shadow: 0 0 15px 1px #3e3d3d;
         }
 
-        body > div{
-            border: 2px solid #efefef;
-            width: 250px;
-            height: 250px;
-            z-index: 1;
+        body > header > div {
+            width: 20%;
             position: absolute;
-            background-color: white;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            float: left;
+            padding: 10px 0 0 30px;
         }
 
-        body > section > div > div {
-            height: 50%;
-            width: 50%;
-            background-color: red;
-        }
-
-        body > div > div {
-            background-color: red;
-            height: 50%;
-            width: 50%;
-            border-radius: 50%;
-        }
-
-        body > section:nth-child(1) > div:nth-child(1){
-            height: 200px;
+        body > header > nav  {
+            float: right;
             width: 30%;
-            background-color: #ffffff;
-            border-radius: 0 0 100% 0;
+            top: 10px;
+            position: relative;
+        }
+
+        body > header > nav > ul > li {
+            display: inline;
+            list-style: none;
+            padding: 0 5px 0 5px;
+        }
+
+        body > main{
+            display: inline-block;
+            position: relative;
+            width: 100%;
+        }
+
+        body > main > div > img{
+            border: 10px;
+            margin: 20px 20px 0 20px ;
+        }
+
+        body > main > div > img:nth-child(1){
+            padding-left: 50px;
+        }
+
+        body > main > section{
+            background-color: #a3a8d7;
+            float: left;
             position: absolute;
+            width: 20%;
+            height: 100%;
             top: 0;
-            left: 0;
+            bottom: 0;
         }
 
-        body > section:nth-child(2) > div:nth-child(1){
-            height: 200px;
-            width: 30%;
-            background-color: #ffffff;
-            border-radius: 0 0 0  100%;
+        body > main > div{
+            float: right;
+            position: relative;
+            width: 79%;
+            height: 100%;
+        }
+
+        body > main > section > nav > ul{
+            list-style: none;
+            padding-top: 10px;
+        }
+
+        body > main > section > nav > ul > li{
+            padding-top: 10px;
+        }
+
+        footer{
+            position: relative;
+            height: 10vh;
+            background-color: #3e3e3e;
+            bottom: 5px;
+            text-align: center;
+        }
+
+        footer>section{
             position: absolute;
+            color: white;
+            font-weight: bold;
             top: 0;
-            right: 0;
-        }
-
-        body > section:nth-child(3) > div:nth-child(1){
-            height: 200px;
-            width: 30%;
-            background-color: #ffffff;
-            border-radius: 0 100% 0 0 ;
-            position: absolute;
             bottom: 0;
+            margin: 0;
             left: 0;
-        }
-
-        body > section:nth-child(4) > div:nth-child(1){
-            height: 200px;
-            width: 30%;
-            background-color: #ffffff;
-            border-radius:  100% 0 0 0 ;
-            position: absolute;
-            bottom: 0;
             right: 0;
-        }
-
-        body > section:nth-child(1) > div:nth-child(3){
-            height: 100px;
-            width: 15%;
-            background-color: #ffffff;
-            border-radius: 0 0 0  100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-
-        body > section:nth-child(2) > div:nth-child(3){
-            height: 100px;
-            width: 15%;
-            background-color: #ffffff;
-            border-radius: 0 0 100% 0 ;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        body > section:nth-child(3) > div:nth-child(3){
-            height: 100px;
-            width: 15%;
-            background-color: #ffffff;
-            border-radius: 100% 0 0 0;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-
-        body > section:nth-child(4) > div:nth-child(3){
-            height: 100px;
-            width: 15%;
-            background-color: #ffffff;
-            border-radius: 0 100% 0 0;
-            position: absolute;
-            bottom: 0;
-            left: 0;
         }
 
     </style>
 </head>
     <body>
-        <section>
-            <div></div>
-            <div>
-                <div></div>
-            </div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div>
-                <div></div>
-            </div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div>
-                <div></div>
-            </div>
-            <div></div>
-        </section>
-        <section>
-            <div></div>
-            <div>
-                <div></div>
-            </div>
-            <div></div>
-        </section>
-        <div>
-            <div></div>
-        </div>
+        <header>
+            <div><img src="assets/images/ijselogo.png" width="80%" alt=""></div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">About</a> Us</li>
+                </ul>
+            </nav>
+        </header>
 
+        <main>
+            <section>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Contacts</li>
+                        <li>About Us</li>
+                    </ul>
+                </nav>
+            </section>
+            <div>
+                <img src="assets/images/car.png" alt="This is a car" width="25%">
+                <img src="assets/images/car.png" alt="This is a car" width="25%">
+                <img src="assets/images/car.png" alt="This is a car" width="25%">
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section>
+                <p> developed by Janith</p>
+            </section>
+        </footer>
     </body>
 </html>
