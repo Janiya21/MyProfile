@@ -10,4 +10,4 @@ Sample page views using html, css and basic js
 
 <br>
 
-more...
+<b>..........<b>
