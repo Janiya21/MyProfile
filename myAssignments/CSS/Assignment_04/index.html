@@ -11,6 +11,7 @@
         width: 100vw;
         height: 100vh;
         top: 0;
+        z-index: -2;
       }
       body>section>div{
         position: sticky;
@@ -47,9 +48,21 @@
         left: 0;
         margin: auto;
         position: absolute;
-        height: 10vh;
-        width: 10vw;
+        height: 20vh;
+        width: 20vw;
         z-index: -1;
+      }
+
+      body>section:nth-child(2){
+        background-color: #6e74b1;
+      }
+
+      body>section:nth-child(3){
+        background-color: #6f6f74;
+      }
+
+      body>section:nth-child(4){
+        background-color: rgba(180, 34, 34, 0.7);
       }
 
       body> section> main> h1{
