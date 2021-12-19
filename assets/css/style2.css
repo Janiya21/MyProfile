@@ -1,7 +1,6 @@
 *{
     margin:0;
     padding:0;
-    /*font-family: sans-serif;*/
 }
 
 .view{
@@ -23,9 +22,10 @@
 }
 
 .first nav{
-    width: 100%;
+    width: 100vw;
     position: sticky;
-    margin: 1.6% auto;
+    height: auto;
+    margin-top: 3%;
     z-index: 1;
     display:flex;
     align-items: center;
@@ -37,7 +37,7 @@
     flex-basis: 40%;
     padding-left: 2%;
     font-family: "Work Sans", serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-decoration: none;
 }
 
@@ -47,12 +47,20 @@
     font-size: 1.1em;
 }
 
-.header01 h1{
-    padding-left: 15%;
-    padding-top: 4%;
-    font-size: 1.6em;
-    color: #898407;
-    font-family: "Vollkorn SC", serif;;
+.first .myName{
+    position: relative;
+    margin: 0 10px 0 10px;
+    font-size: 1.26vw;
+    left: 6%;
+    top: 3%;
+    z-index: 1;
+    display: inline-block;
+}
+
+.first .myName h1{
+    font-size: 2.8em;
+    color: #927341;
+    font-family: "Vollkorn SC", serif;
 }
 
 .nav-links{
@@ -61,7 +69,6 @@
     text-align: right;
     position: relative;
     right: 1%;
-    bottom: 1em;
 }
 
 .nav-links ul li{
@@ -99,18 +106,9 @@
     color: #bad3f1;
 }
 
-/*.first .information{
-    width: 1000px;
-    height: 1000px;
-    position:absolute;
-    top: 50%;
-    left: -10%;
-    transform: translateY(-50%);
-}*/
-
 .first .information{
-    width: 67.5%;
-    height: 1000px;
+    width: 67.5vw;
+    height: 135vh;
     position:absolute;
     top: 50%;
     left: -10%;
@@ -119,11 +117,11 @@
 
 .myPhoto{
     width: 30%;
-    height: 30%;
+    /*height: 28%;*/
     position: absolute;
     border-radius: 50%;
     top: 50%;
-    left: 35%;
+    left: 37%;
     transform: translateY(-50%);
     z-index: 1;;
 }
@@ -131,10 +129,10 @@
 .overlay{
     width: 0;
     height: 0;
-    border-top: 30em solid white;
-    border-right: 30em solid transparent;
-    border-bottom: 30em solid white;
-    border-left: 30em solid white;
+    border-top: 70vh solid #ffffff;
+    border-right: 35vw solid transparent;
+    border-bottom: 70vh solid #ffffff;
+    border-left: 35vw solid #ffffff;
     position: absolute;
     left: 0;
     top: 0;
@@ -242,8 +240,8 @@
     margin: 4px 2px;
     cursor: pointer;
     background-color: #666363;
-    height: 6%; /*here*/
-    width: 20%; /*here*/
+    height: 7vh; /*here*/
+    width: 11vw; /*here*/
 }
 
 #details .slide-left{
@@ -295,7 +293,7 @@
 .progress{
     margin: 100px auto; /*here*/
     position: relative;
-    height: 60%;
+    height: 60vh;
 }
 
 .progress ul{
@@ -303,14 +301,16 @@
     background: black;
     position: relative;
     height: 80%;
+    width: 100vw;
 }
 
 .progress ul li{
     display: inline-block;
-    width: 200px;
+    width: 15vw;
     position: relative;
-    height: 300px;
-    margin: 0 30px 30px 0;
+    height: 45vh;
+    margin: 0 30px 0 0;
+    font-size: 16px;
 }
 
 .progress img{
@@ -321,7 +321,7 @@
     position: relative;
     color: white;
     margin: 0 5px 25px 0;
-    /*top: 30px;*/
+    /*font-size: 2vw;*/
 }
 
 .progress ul li p{
@@ -334,7 +334,7 @@
 
 .progress ul li .fa{
     background: #cccccc;
-    width: 22px;
+    width: 30px;
     height: 22px;
     color: #ffffff;
     border-radius: 40%;
@@ -342,14 +342,14 @@
 }
 
 .progress ul li .fa-check-square-o{
-
+    /*width: 20px;*/
 }
 
 .progress ul li .fa::after{
     content: '';
     background: #c4c4c4;
     height: 5px;
-    width: 230px;
+    width: 27vw;
     display: block;
     position: relative;
     top: -8px;
@@ -400,11 +400,11 @@
 }
 
 .fourth main{
-    top: 10px;
+    top: 5vh;
     color: #ffffff;
     overflow-y: scroll;
-    width: 900px;
-    max-height: 520px;
+    width: 64vw;
+    max-height: 83vh;
     float: right;
     background-color: transparent;
     position: relative;
@@ -429,30 +429,36 @@
 }
 
 .tech{
-    min-height: 160px;
+    min-height: 10vh;
     display: flex;
     flex-grow: 1;
+    width: 100%;
 }
 
 .tech img{
     /*width: 15%;*/
     float: left;
     height: 100%;
-    padding-top: 70px;
+    padding-top: 12vh;
     background-color: transparent;
 }
 
 .tech ul{
-    width: 40%;
-    margin-top: 60px;
+    width: 28vw;
+    margin-top: 10vh;
     padding-left: 60px;
     position: relative;
+    font-size: 1.1vw;
 }
 
 .tech .skill{
     position: relative;
     height: 100%;
 }
+
+/*.skill svg{
+    width: 8vw;
+}*/
 
 #number, #number2, #number3 , #number4, #number5, #number6{
     font-weight: bolder;
@@ -465,20 +471,21 @@
 
 circle{
     stroke: url(#GradientColor);
-    stroke-width: 13px;
-    stroke-dasharray: 410;
-    stroke-dashoffset: 410;
+    stroke-width: 1.1vw;
+    stroke-dasharray: 31vw;
+    stroke-dashoffset: 31vw;
     animation: anim 2s linear forwards;
 }
 
 svg{
     position: relative;
-    margin-top: 10px;
+    margin-top: 2vh;
 }
 
 @keyframes anim{
     100%{
-        stroke-dashoffset: 140;
+        /*stroke-dashoffset: 140; !* 17vw;*!*/
+        stroke-dashoffset: 120%;
     }
 }
 
