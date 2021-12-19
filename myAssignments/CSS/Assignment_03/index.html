@@ -12,120 +12,94 @@
             width: 100vw;
         }
 
-         body > .circle01{
-             position: fixed;
-             height: 30vh;
-             width: 15vw;
-             color: transparent;
-             border: 10px solid red;
-             border-radius: 50%;
-             top: 35vh;
-             left: 40vw;
-             z-index: 1;
-         }
+        body > div:nth-child(1){
+            position: fixed;
+            height: 30vh;
+            width: 15vw;
+            color: transparent;
+            border: 12px solid red;
+            border-radius: 50%;
+            top: 35vh;
+            left: 40vw;
+            z-index: 1;
+        }
 
-        body > .circle02{
+        body > div:nth-child(2){
             position: fixed;
             height: 32.5vh;
             width: 16.2vw;
             color: transparent;
-            border: 15px solid #828282;
+            border: 20px solid #828282;
             border-radius: 50%;
             top: 33vh;
-            left: 39vw;
+            left: 38.9vw;
             z-index: 1;
         }
 
-         body> .sec-01{
-             position: relative;
-             height: 100vh;
-             width: 100vw;
-             background-color: rgba(206, 206, 206, 0.15);
-             z-index: -1;
-         }
+        body> section{
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(206, 206, 206, 0.15);
+            z-index: -1;
+        }
 
-         body> .sec-01 .fixed-circle-01{
-             background-color: green;
-             border-radius: 50%;
-             position: relative;
-             top: 36vh;
-             left: 40.22vw;
-             height: 31vh;
-             width: 16vw;
-         }
+        body> section> div{
+            border-radius: 50%;
+            position: relative;
+            top: 36vh;
+            left: 40.22vw;
+            height: 31vh;
+            width: 16vw;
+        }
 
-         body> .sec-02{
-             position: relative;
-             height: 100vh;
-             width: 100vw;
-             background-color: rgba(206, 206, 206, 0.15);
-             z-index: -1;
-         }
+        body> section:nth-child(3) > div{
+            background-color: green;
+        }
 
-         body> .sec-02 .fixed-circle-02{
-             background-color: #2186d0;
-             border-radius: 50%;
-             position: relative;
-             top: 36vh;
-             left: 40.22vw;
-             height: 31vh;
-             width: 16vw;
-         }
+        body> section:nth-child(4)> div{
+            background-color: #2186d0;
+        }
 
-         body> .sec-03{
-             position: relative;
-             height: 100vh;
-             width: 100vw;
-             background-color: rgba(206, 206, 206, 0.15);
-             z-index: -1;
-         }
+        body> section:nth-child(5) > div{
+            background-color: #a34d4d;
+        }
 
-         body> .sec-03 .fixed-circle-03{
-             background-color: #a34d4d;
-             border-radius: 50%;
-             position: relative;
-             top: 36vh;
-             left: 40.22vw;
-             height: 31vh;
-             width: 16vw;
-         }
+        body> section:nth-child(3) > div > h2{
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            color: white;
+        }
 
-         body> .sec-01 > .fixed-circle-01 > h2{
-             position: absolute;
-             top: 35%;
-             left: 35%;
-             color: white;
-         }
+        body> section:nth-child(4) > div > h2{
+            position: absolute;
+            top: 35%;
+            left: 15%;
+            color: white;
+        }
 
-         body> .sec-02 > .fixed-circle-02 > h2{
-             position: absolute;
-             top: 35%;
-             left: 15%;
-             color: white;
-         }
-
-         body> .sec-03 > .fixed-circle-03 > h2{
-             position: absolute;
-             top: 13%;
-             left: 22%;
-             color: white;
-         }
-
+        body> section:nth-child(5) > div > h2{
+            position: absolute;
+            top: 13%;
+            left: 22%;
+            color: white;
+        }
 
     </style>
 
 </head>
     <body>
-         <div class="circle01"></div>
-         <div class="circle02"></div>
-         <section class="sec-01">
-             <div class="fixed-circle-01"><h2>Hello</h2></div>
-         </section>
-         <section class="sec-02">
-             <div class="fixed-circle-02"><h2>Welcome To</h2></div>
-         </section>
-         <section class="sec-03">
-             <div class="fixed-circle-03"><h2>Institute<br>Of <br> Software <br> Engineering</h2></div>
-         </section>
+    <div></div>
+    <div></div>
+    <section>
+        <div><h2>Hello</h2></div>
+    </section>
+    <section>
+        <div><h2>Welcome To</h2></div>
+    </section>
+    <section>
+        <div><h2>Institute<br>Of <br> Software <br> Engineering</h2></div>
+    </section>
     </body>
 </html>
