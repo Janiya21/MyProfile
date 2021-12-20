@@ -99,15 +99,31 @@
             right: 0;
         }
 
-        @media all and (min-width: 425px) and (max-width: 768px) {
+        @media all and (min-width: 768px) {
 
             *{
-                font-size: 14px;
+                font-size: 16px;
+            }
+
+            body > header > div > img{
+                width: 200px;
+            }
+
+        }
+
+        @media all and (min-width: 520px) and (max-width: 768px) {
+
+            *{
+                font-size: 15px;
             }
 
             body > header > div {
                 width: 32%;
                 padding: 15px 0 0 30px;
+            }
+
+            body > header > div > img{
+                width: 180px;
             }
 
             body > main > section:nth-child(1) > nav > ul {
@@ -119,19 +135,11 @@
             }
         }
 
-        @media all and (max-width: 426px) {
+        @media all and (min-width: 425px) and (max-width: 520px) {
 
-            *{
-                font-size: 12px;
-            }
-
-            body > header > div {
-                width: 28%;
-                padding: 20px 0 0 30px;
-            }
-
-            body > main > section:nth-child(1) > nav > ul {
-                padding-left: 10px;
+            body > header > div > img{
+                margin-top: 10px;
+                width: 30vw;
             }
 
             body > main > section:nth-child(2) > div:nth-child(1) {
@@ -139,7 +147,48 @@
             }
 
             body > main > section:nth-child(2) > div:nth-child(1) > img {
-                width: 65vw;
+                width: 52vw;
+            }
+
+            body > main > section:nth-child(1) > nav > ul {
+                padding-left: 10px;
+            }
+        }
+
+        @media all and (max-width: 426px) {
+
+            *{
+                font-size: 15px;
+            }
+
+            body > header > div {
+                width: 30%;
+                padding: 20px 0 0 18px;
+            }
+
+            body > header > div > img{
+                width: 30vw;
+            }
+
+            body > header > nav {
+                right: 3px;
+                width: 290px;
+            }
+
+            body > main > section:nth-child(1){
+                display: none;
+            }
+
+            body > main > section:nth-child(2) {
+                width: 98%;
+            }
+
+            body > main > section:nth-child(2) > div:nth-child(1) {
+                flex-direction: column;
+            }
+
+            body > main > section:nth-child(2) > div:nth-child(1) > img {
+                width: 80vw;
             }
 
         }
@@ -148,7 +197,7 @@
 </head>
     <body>
         <header>
-            <div><img src="assets/images/ijselogo.png" width="80%" alt=""></div>
+            <div><img src="assets/images/ijselogo.png" alt=""></div>
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
