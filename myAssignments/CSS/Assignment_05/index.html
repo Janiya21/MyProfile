@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design 01</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+
+        body > header {
+            position: relative;
+            height: 13vh;
+            box-shadow: 0 0 15px 1px #3e3d3d;
+        }
+
+        body > header > div {
+            width: 20%;
+            position: absolute;
+            float: left;
+            padding: 10px 0 0 30px;
+        }
+
+        body > header > nav  {
+            float: right;
+            top: 10px;
+            right: 20px;
+            position: relative;
+        }
+
+        body > header > nav > ul > li {
+            display: inline;
+            list-style: none;
+            padding: 0 5px 0 5px;
+        }
+
+        body > main{
+            display: inline-block;
+            position: relative;
+            width: 100%;
+        }
+
+        body > main > section:nth-child(2) > div:nth-child(1){
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        body > main > section:nth-child(2) > div:nth-child(1) > img{
+            margin: 2vh 1vw 0 1vw ;
+        }
+
+        body > main > section:nth-child(2) > img:nth-child(1){
+            padding-left: 50px;
+        }
+
+        body > main > section:nth-child(1){
+            background-color: #a3a8d7;
+            float: left;
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+        }
+
+        body > main > section:nth-child(2){
+            float: right;
+            position: relative;
+            width: 79%;
+            height: 100%;
+        }
+
+        body > main > section:nth-child(1) > nav > ul{
+            list-style: none;
+            padding-top: 10px;
+        }
+
+        body > main > section:nth-child(1) > nav > ul > li{
+            padding-top: 10px;
+        }
+
+        footer{
+            position: relative;
+            height: 10vh;
+            background-color: #3e3e3e;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        footer>section{
+            position: absolute;
+            color: white;
+            font-weight: bold;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+        }
+
+        @media all and (min-width: 425px) and (max-width: 768px) {
+
+            *{
+                font-size: 14px;
+            }
+
+            body > header > div {
+                width: 32%;
+                padding: 15px 0 0 30px;
+            }
+
+            body > main > section:nth-child(1) > nav > ul {
+                padding-left: 5vw;
+            }
+
+            body > main > section:nth-child(2) > div:nth-child(1) > img {
+                width: 24vw;
+            }
+        }
+
+        @media all and (max-width: 426px) {
+
+            *{
+                font-size: 12px;
+            }
+
+            body > header > div {
+                width: 28%;
+                padding: 20px 0 0 30px;
+            }
+
+            body > main > section:nth-child(1) > nav > ul {
+                padding-left: 10px;
+            }
+
+            body > main > section:nth-child(2) > div:nth-child(1) {
+                flex-direction: column;
+            }
+
+            body > main > section:nth-child(2) > div:nth-child(1) > img {
+                width: 65vw;
+            }
+
+        }
+
+    </style>
+</head>
+    <body>
+        <header>
+            <div><img src="assets/images/ijselogo.png" width="80%" alt=""></div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="">About</a> Us</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>Services</li>
+                        <li>Contacts</li>
+                        <li>About Us</li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <div>
+                   <img src="assets/images/car.png" alt="This is a car" width="28%">
+                   <img src="assets/images/car.png" alt="This is a car" width="28%">
+                   <img src="assets/images/car.png" alt="This is a car" width="28%">
+                </div>
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                        and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <p> developed by Janith</p>
+            </section>
+        </footer>
+    </body>
+</html>
