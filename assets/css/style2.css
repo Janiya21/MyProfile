@@ -1,31 +1,27 @@
-*{
-    margin:0;
-    padding:0;
-}
 
 .view{
     width: 100%;
     height: 100vh;
     position: relative;
-    overflow: hidden;
     background-size: 100% 100%;
+    margin: 0;
 }
 
 /* --------------- first view ------------------ */
 
 .first{
-    margin-bottom: 1%;
+    margin:0 0 1% 0;
     background-image: url('../images/cod9.jpg');
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-position: -15% 20%;
+    font-size: 15px;
 }
 
 .first nav{
-    width: 100vw;
-    position: sticky;
+    position: relative;
     height: auto;
-    margin-top: 3%;
+    top: 4%;
     z-index: 1;
     display:flex;
     align-items: center;
@@ -33,22 +29,21 @@
 }
 
 .header01{
-    /*width: 40%;*/
     flex-basis: 40%;
     padding-left: 2%;
-    font-family: "Work Sans", serif;
-    font-size: 1.5em;
-    text-decoration: none;
 }
 
 .header01 h2{
+    font-family: "Work Sans", serif;
+    font-weight: bold;
     padding-left: 3%;
     padding-top: 1%;
-    font-size: 1.1em;
+    font-size: 1.52em;
 }
 
 .first .myName{
     position: relative;
+    font-family: 'Vollkorn SC', serif;
     margin: 0 10px 0 10px;
     font-size: 1.26vw;
     left: 6%;
@@ -63,11 +58,23 @@
     font-family: "Vollkorn SC", serif;
 }
 
+.menu-expand{
+    width: 50px;
+    position: absolute;
+    right: 70px;
+    display:none;
+}
+
+.menu-expand > img{
+    width: 30px;
+}
+
 .nav-links{
     flex: 1;
     max-width: 56%;
     text-align: right;
     position: relative;
+    font-size: 1.3em;
     right: 1%;
 }
 
@@ -142,7 +149,93 @@
     color: thistle;
 }
 
-/*------------ Second view --------------*/
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+    .header01 {
+        flex-basis: 36%;
+    }
+
+    .nav-links{
+        padding-left: 5px;
+        max-width: 62%;
+    }
+
+    .nav-links ul li {
+        margin: 0 2%;
+        font-size: 0.9em;
+    }
+
+    .overlay {
+        border-left: 30vw solid #ffffff;
+    }
+
+    .first .myName {
+        font-size: 1.4vw;
+        left: 8%;
+        top: 4%;
+        width: 20vw;
+    }
+
+    .myPhoto{
+        width: 212px;
+        left: 30%;
+    }
+
+}
+
+@media all and (min-width: 630px) and (max-width: 768px) {
+
+    .header01 {
+        flex-basis: 36%;
+    }
+
+    .overlay {
+        border-left: 28vw solid #ffffff;
+    }
+
+    .nav-links{
+        padding-left: 5px;
+        max-width: 63%;
+    }
+
+    .nav-links ul{
+        padding-left: 0;
+    }
+
+    .nav-links ul li {
+        margin: 0 2%;
+        font-size: 0.8em;
+    }
+
+    .first .myName {
+        font-size: 1.46vw;
+        left: 9%;
+        top: 5%;
+        width: 25vw;
+    }
+
+    .myPhoto {
+        width: 200px;
+        top: 50%;
+        left: 25%;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 630px){
+    .menu-expand{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .header01{
+        margin-right: auto;
+    }
+}
+
+    /*------------ Second view --------------*/
 
 .second{
     background-position: -15% 20%;
@@ -294,6 +387,9 @@
     margin: 100px auto; /*here*/
     position: relative;
     height: 60vh;
+    /*overflow-x: scroll;*/
+    width: 100vw;
+    left: -3vw;
 }
 
 .progress ul{
@@ -301,7 +397,6 @@
     background: black;
     position: relative;
     height: 80%;
-    width: 100vw;
 }
 
 .progress ul li{
@@ -349,7 +444,7 @@
     content: '';
     background: #c4c4c4;
     height: 5px;
-    width: 27vw;
+    width: 20vw;
     display: block;
     position: relative;
     top: -8px;
@@ -362,7 +457,7 @@
 }
 
 .progress ul li:nth-child(5) .fa::after{
-    width: 140px;
+    width: 8vw;
 }
 
 
@@ -512,7 +607,7 @@ svg{
     top: 10px;
     color: #ffffff;
     overflow-x: scroll;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
     max-width: 1200px;
     height: 90%;
     background-color: transparent;
