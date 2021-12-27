@@ -8,69 +8,116 @@
       section{
         height: 100vh;
         width: 100vw;
+        overflow: hidden;
         background-image: url("assets/images/sky.jpg");
       }
 
-      section> div:nth-child(1){
+      section> main{
+        position: relative;
+        top: 40vh;
+        width: 250vw;
+        height: 60vh;
+
+        background-repeat: repeat-x;
+        animation-name: goBackground;
+        animation-iteration-count: 3;
+        animation-duration: 7s;
+
+      }
+      section> main>div:nth-child(1){
         position: absolute;
         bottom: 0;
         background-image: url("assets/images/road.jpg");
-        width: 100vw;
+        width: 250vw;
         height: 30vh;
       }
 
-      section>div:nth-child(2){
+      section>main>div:nth-child(2){
         position: absolute;
         bottom: 30vh;
         background-image: url("assets/images/city.png");
-        width: 100vw;
+        width: 250vw;
         height: 30vh;
-        background-repeat: no-repeat;
       }
 
-      section> div:nth-child(3){
+      section> div:nth-child(2){
         position: absolute;
-        left: 8vw;
+        left: 40vw;
         bottom: 19vh;
         width: 24vw;
         height: 18vh;
 
       }
 
-      section> div:nth-child(3)> img{
+      section> div:nth-child(2)> img{
         position: absolute;
-        width: 23vw;
-        height: 17vh;
+        width: 300px;
+        height: 130px;
       }
 
-      section> div:nth-child(3)> div:nth-child(2)> img{
+      section> div:nth-child(2)> div:nth-child(2)> img{
         position: absolute;
-        width: 4.7vw;
-        height: 7vh;
+        width: 60px;
+        height: 60px;
         top: 65px;
-        left: 22px;
+        left: 25px;
+
+        animation-name: rotateWheel;
+        animation-duration: 7s;
+        animation-iteration-count: 3;
       }
 
-      section> div:nth-child(3)> div:nth-child(3)> img{
+      section> div:nth-child(2)> div:nth-child(3)> img{
         position: absolute;
-        width: 4.7vw;
-        height: 7vh;
+        width: 60px;
+        height: 60px;
         top: 65px;
-        left: 16vw;
+        left: 210px;
+
+        animation-name: rotateWheel;
+        animation-duration: 7s;
+        animation-iteration-count: 3;
       }
 
+      @keyframes goBackground{
+        from{
+         right: 0;
+        }
+        to{
+          right: 150vw;
+        }
+      }
 
+      @keyframes rotateWheel{
+        0%{
+          transform: rotate(0deg);
+        }
+        30%{
+          transform: rotate(-360deg);
+        }
+        100%{
+          transform: rotate(90deg);
+        }
+      }
 
   </style>
 </head>
 <body>
   <section>
-    <div></div>
-    <div></div>
+
+    <main>
+      <div></div>
+      <div></div>
+    </main>
+
     <div>
       <img src="assets/images/car.png" alt="">
-      <div> <img src="assets/images/wheel.png" alt=""> </div>
-      <div>  <img src="assets/images/wheel.png" alt="">  </div>
+      <div>
+        <img src="assets/images/wheel.png" alt="">
+      </div>
+      <div>
+        <img src="assets/images/wheel.png" alt="">
+      </div>
     </div>
   </section>
 </body>
