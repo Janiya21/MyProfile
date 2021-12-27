@@ -47,7 +47,21 @@
         background-size: cover;
     }
 
+    @keyframes slider {
+        0%,20%{
+            transform: translateX(0);
+        }
+        25%,45%{
+            transform: translateX(-25%);
+        }
+        50%,75%{
+            transform: translateX(-50%);
+        }
 
+        100%{
+            transform: translateX(-75%);
+        }
+    }
 
   </style>
 
