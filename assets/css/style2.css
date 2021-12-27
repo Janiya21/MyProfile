@@ -115,7 +115,7 @@
 
 .first .information{
     width: 67.5vw;
-    height: 135vh;
+    height: 100vh;
     position:absolute;
     top: 50%;
     left: -10%;
@@ -133,13 +133,13 @@
     z-index: 1;;
 }
 
-.overlay{
+.overlay {
     width: 0;
     height: 0;
-    border-top: 70vh solid #ffffff;
-    border-right: 35vw solid transparent;
-    border-bottom: 70vh solid #ffffff;
-    border-left: 35vw solid #ffffff;
+    border-top: 50vh solid #ffffff;
+    border-right: 30vw solid transparent;
+    border-bottom: 50vh solid #ffffff;
+    border-left: 30vw solid #ffffff;
     position: absolute;
     left: 0;
     top: 0;
@@ -216,12 +216,12 @@
 
     .myPhoto {
         width: 200px;
-        top: 50%;
+        top: 52%;
         left: 25%;
     }
 }
 
-@media all and (min-width: 425px) and (max-width: 630px){
+@media all and (max-width: 630px){
     .menu-expand{
         display: block;
     }
@@ -232,6 +232,16 @@
 
     .header01{
         margin-right: auto;
+    }
+
+    .first .myName {
+        display: none;
+    }
+
+    .myPhoto {
+        width: 150px;
+        top: 52%;
+        left: 29%;
     }
 }
 
@@ -311,10 +321,10 @@
 
 .right p{
     letter-spacing: 0.2em;
-    word-spacing: 0.3em;
+    word-spacing: 0.1em;
     font-family: "Vollkorn SC", serif;
     text-align: justify;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 .left img{
@@ -323,7 +333,7 @@
 
 .split button{
     left: 70%;
-    top: 10%; /*here*/
+    top: 6%; /*here*/
     position: relative;
     border: none;
     color: white;
@@ -362,6 +372,105 @@
     margin: 0;
     opacity: 1;
     transition: 0s
+}
+
+@media all and (min-width: 325px) and (max-width: 768px){
+    .left {
+        padding-top: 20px;
+        height: 35%;
+        width: 92vw;
+    }
+    .left > img{
+        width:300px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .split{
+        padding-top: 0;
+    }
+
+    .right {
+        width: 80%;
+        position: relative;
+        padding-top: 0;
+        right: 10%;
+        height: 60%;
+    }
+
+    .right p{
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
+        font-family: "Vollkorn SC", serif;
+        text-align: justify;
+        font-size: 0.6em;
+    }
+
+    .right > p:nth-child(3){
+        position: relative;
+        bottom: 20px;
+    }
+
+    .split button {
+        left: 70%;
+        top: -5%;
+        margin: 4px 2px;
+        height: 4vh;
+        width: 20vw;
+        font-size: 0.5em;
+    }
+
+}
+
+@media all and (max-width: 425px){
+    .left {
+        padding-top: 20px;
+        height: 30%;
+        width: 88vw;
+    }
+    .left > img{
+        width:260px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        position: absolute;
+    }
+
+    .split{
+        padding-top: 0;
+    }
+
+    .right {
+        width: 80%;
+        position: relative;
+        padding-top: 10px;
+        right: 10%;
+        height: 75%;
+    }
+
+    .right p{
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
+        font-family: "Vollkorn SC", serif;
+        text-align: justify;
+        font-size: 0.6em;
+    }
+
+    .right > p:nth-child(3){
+        position: relative;
+        bottom: 20px;
+    }
+
+    .split button {
+        left: 70%;
+        top: -5%;
+        margin: 4px 2px;
+        height: 4vh;
+        width: 20vw;
+        font-size: 0.5em;
+    }
 }
 
 /*-------------- Third view -------------*/
