@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Design 01</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+
+        div{
+            position: relative;
+            width: 250px;
+            height: 100px;
+            top: 0;
+            background-color: blue;
+            border-radius: 15px;
+            animation-name: test;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+        }
+
+        @keyframes test {
+            0% , 25% {
+                left: 0;
+            }
+            25% {
+                top: 0;
+                left: 83vw;
+                transform: rotate(180deg);
+                background-color: yellow;
+            }
+            50%{
+                left: 83vw;
+                top: 600px;
+                transform: rotate(360deg);
+                background-color: red;
+            }
+
+            75%{
+                top: 600px;
+                left: 0;
+                transform: rotate(180deg);
+                background-color: deeppink;
+            }
+
+            100%{
+                left: 0;
+                background-color: orange;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
