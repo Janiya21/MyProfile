@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <<meta charset="UTF-8">
+  <title>Responsive Design 09</title>
+  <style>
+      main{
+          width: 700px;
+          height: 400px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin:auto;
+          overflow: hidden;
+      }
+      main>section{
+          width: 400%;
+          height: 100%;
+          display: flex;
+          animation-name: slider;
+          animation-duration: 10s;
+      }
+
+      main>section>div{
+          width: 100%;
+      }
+    section> div:nth-child(1){
+        background: url("assets/images/jsimg.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    section> div:nth-child(2){
+        background: url("assets/images/lap5.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    section> div:nth-child(3){
+        background: url("assets/images/lap2.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    section> div:nth-child(4){
+        background: url("assets/images/lap1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+
+</body>
+</html>
