@@ -496,28 +496,22 @@
     margin: 100px auto;
     position: absolute;
     height: 60vh;
-    /* overflow-x: scroll; */
     width: 92vw;
-    left: 2vw;
+    left: 3vw;
     overflow: hidden;
 }
 
 .progress ul{
-    text-align: center;
     background: black;
     position: relative;
     height: 90%;
     width: 150vw;
     margin: 0;
     padding: 0;
-
-    animation-name: slider;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 .progress ul li{
+    text-align: center;
     display: inline-block;
     width: 19vw;
     position: relative;
@@ -525,6 +519,7 @@
     margin: 0 35px 0 0;
     font-size: 16px;
 }
+
 
 .progress img{
     margin-bottom: 20px;
@@ -562,7 +557,7 @@
     content: '';
     background: #c4c4c4;
     height: 5px;
-    width: 22vw;
+    width: 25vw;
     display: block;
     position: relative;
     top: -8px;
@@ -588,7 +583,7 @@
 }
 
 @keyframes slider{
-    /*0%,25%{
+    0%,25%{
         right: 0;
     }
 
@@ -596,8 +591,88 @@
         right: 25vw;
     }
     100%{
-        right: 50vw;
-    }*/
+        right: 40vw;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 1600px){
+
+
+    .progress ul {
+        width: max-content;
+        animation-name: slider;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .progress ul li h2 {
+        margin: 11px 0 25px 0;
+        font-size: 3vw;
+    }
+
+    .progress ul li p {
+        font-size: 0.8em;
+        background: #000000;
+    }
+
+    .progress ul li {
+        height: 45vh;
+        margin: 21px 35px 0 0;
+    }
+    .progress ul li .fa-check-square-o {
+        width: 26px;
+    }
+
+    .progress {
+        margin: 120px auto;
+        height: 64vh;
+    }
+
+    .progress img {
+        width: 65px;
+    }
+}
+
+@media all and (max-width: 500px){
+    .progress ul li {
+        text-align: center;
+        /* display: inline-block; */
+        width: 49vw;
+        position: relative;
+        height: 38vh;
+        margin: 0 35px 0 100px;
+        font-size: 16px;
+        animation-name: none;
+    }
+
+    .progress ul {
+        height: 70%;
+        width: 90vw;
+    }
+
+    .progress {
+        margin: 60px auto;
+        position: absolute;
+        height: 75vh;
+        width: 92vw;
+        left: 3vw;
+        overflow: scroll;
+    }
+
+    .progress ul li .fa {
+        display: none;
+        background: deepskyblue;
+    }
+}
+
+@keyframes slider2{
+    from{
+        right: 0;
+    }
+    to{
+        right: 0;
+    }
 }
 /*-------------- Fourth view -------------*/
 
@@ -728,56 +803,31 @@ svg{
     color: white;
 }
 
-.fifth main{
-    top: 10px;
+.fifth main {
+    top: 5vh;
     color: #ffffff;
-    overflow-x: scroll;
-    /*overflow-y: hidden;*/
-    max-width: 1200px;
-    height: 90%;
+    overflow: hidden;
+    width: 90vw;
+    /*max-height: 79vh;*/
+    margin-left: 8vw;
     background-color: transparent;
-    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+}
 
-
-    /*display: grid;*/
-    /*grid-template-columns: repeat(3, 1fr);*/
-    /*gap: 10px;*/
-    /*grid-auto-rows: minmax(150px, auto);*/
-
+.fifth main .stack {
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(150px, auto);
+    width: auto;
+    height: 78vh;
+    overflow-y: hidden;
+    /*overflow-x: scroll;*/
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
 }
 
-.one{
-    position: relative;
+.fifth main .stack img{
+    width: 24vw;
 }
-
-.fifth main::-webkit-scrollbar-track
-{
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #F5F5F5;
-}
-
-.fifth main::-webkit-scrollbar
-{
-    width: 10px;
-    background-color: #F5F5F5;
-}
-
-.fifth main::-webkit-scrollbar-thumb
-{
-    background-color: #000000;
-    border: 2px solid #555555;
-}
-
-.fifth main div img{
-    position: relative;
-    padding: 30px 0 10px 40px;
-
-}
-
 /*------------ sixth view --------------*/
 
 .sixth{
