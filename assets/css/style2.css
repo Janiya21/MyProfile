@@ -843,6 +843,25 @@ svg{
         overflow: scroll;
     }
 }
+
+@media all and (max-width: 500px){
+    .fifth main .stack img{
+        width: 75vw;
+    }
+
+    .fifth main {
+        width: 80vw;
+    }
+
+    .fifth main .stack {
+        margin-left: 18vw;
+        overflow-x: hidden;
+        width: 60vw;
+        overflow-y: scroll;
+        grid-template-columns: 1fr;
+        row-gap: 8vh;
+    }
+}
 /*------------ sixth view --------------*/
 
 .sixth{
