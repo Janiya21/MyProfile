@@ -821,12 +821,27 @@ svg{
     height: 78vh;
     overflow-y: hidden;
     /*overflow-x: scroll;*/
-    grid-column-gap: 50px;
+    grid-column-gap: 2vw;
     grid-template-columns: auto auto auto;
 }
 
 .fifth main .stack img{
-    width: 24vw;
+    width: 22vw;
+}
+
+@media all and (min-width: 500px) and (max-width: 768px){
+    .fifth main .stack img{
+        width: 30vw;
+    }
+
+    .fifth main .stack {
+
+        height: 78vh;
+        margin-left: 8vw;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 8vh;
+        overflow: scroll;
+    }
 }
 /*------------ sixth view --------------*/
 
