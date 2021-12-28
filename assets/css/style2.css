@@ -493,27 +493,36 @@
 }
 
 .progress{
-    margin: 100px auto; /*here*/
-    position: relative;
+    margin: 100px auto;
+    position: absolute;
     height: 60vh;
-    /*overflow-x: scroll;*/
-    width: 100vw;
-    left: -3vw;
+    /* overflow-x: scroll; */
+    width: 92vw;
+    left: 2vw;
+    overflow: hidden;
 }
 
 .progress ul{
     text-align: center;
     background: black;
     position: relative;
-    height: 80%;
+    height: 90%;
+    width: 150vw;
+    margin: 0;
+    padding: 0;
+
+    animation-name: slider;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 .progress ul li{
     display: inline-block;
-    width: 15vw;
+    width: 19vw;
     position: relative;
     height: 45vh;
-    margin: 0 30px 0 0;
+    margin: 0 35px 0 0;
     font-size: 16px;
 }
 
@@ -553,7 +562,7 @@
     content: '';
     background: #c4c4c4;
     height: 5px;
-    width: 20vw;
+    width: 22vw;
     display: block;
     position: relative;
     top: -8px;
@@ -564,11 +573,6 @@
 .progress ul li:nth-child(3) .fa{
     background-color: red;
 }
-
-.progress ul li:nth-child(5) .fa::after{
-    width: 8vw;
-}
-
 
 .progress ul li:nth-child(1) .fa::after, .progress ul li:nth-child(2) .fa::after{
     background-color: deepskyblue;
@@ -583,6 +587,18 @@
     background: deepskyblue;
 }
 
+@keyframes slider{
+    /*0%,25%{
+        right: 0;
+    }
+
+    50%,75%{
+        right: 25vw;
+    }
+    100%{
+        right: 50vw;
+    }*/
+}
 /*-------------- Fourth view -------------*/
 
 .fourth{
