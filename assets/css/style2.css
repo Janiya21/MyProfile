@@ -905,18 +905,25 @@ svg{
 }
 
 .seven main{
-    height: 80%;
+    height: 88vh;
+    display: flex;
+    column-gap: 20px;
 }
 
 .seven .side-left{
     float: left;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    padding-top: 50px;
-    padding-left: 20px;
+    width: 38vw;
+    height: 77vh;
+    top: 7vh;
+    padding-left: 2vw;
 }
 
 .seven .side-right{
     float: right;
+    width: 56%;
     position: relative;
     padding-top: 50px;
 }
@@ -928,7 +935,6 @@ svg{
     text-align: justify;
     font-size: 15px;
     position: relative;
-    right: 20px;
     top: 30px;
 }
 
@@ -940,35 +946,26 @@ svg{
 
 .seven .side-left #btn-call-me{
     position: relative;
-    left: 40px;
-    top: 25px;
-    width: 400px;
+    top: 4vh;
     background-color: rgba(252, 208, 90, 0.66);
     border-color: rgba(252, 207, 116, 0.78);
     color: white;
-    height: 35px;
 }
 
 .seven .side-left #btn-gmail{
     position: relative;
-    left: 40px;
-    top: 50px;
-    width: 400px;
+    top: 6vh;
     background-color: rgba(199, 75, 75, 0.68);
     border-color: rgba(194, 87, 87, 0.8);
     color: white;
-    height: 35px;
 }
 
 .seven .side-left #btn-whatsapp{
     position: relative;
-    left: 40px;
-    top: 75px;
-    width: 400px;
+    top: 8vh;
     background-color: rgba(54, 168, 68, 0.82);
     border-color: rgba(74, 182, 43, 0.85);
     color: white;
-    height: 35px;
 }
 
 .seven > hr{
@@ -991,5 +988,16 @@ svg{
 
 .seven main img{
     position: relative;
-    left: 40px;
+    left: 3vw;
+}
+
+.side-left img{
+    width: 32vw;
+    top: 3vh;
+}
+
+.side-left button{
+    width: 32vw;
+    left: 3vw;
+    height: 5vh;
 }
