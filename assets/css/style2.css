@@ -7,6 +7,9 @@
     margin: 0;
 }
 
+.view> header> h1{
+    padding-top: 8px;
+}
 /* --------------- first view ------------------ */
 
 .first{
@@ -880,11 +883,35 @@ svg{
 }
 
 .search-bar{
+    position: absolute;
     height: 6vh;
-    left: 3vw;
+    padding-left: 5vw;
+    padding-top: 3vh;
+    width: 20vw;
     display: inline;
-    position: relative;
 }
+
+.search-bar> form{
+    width: 10vw;
+}
+
+#languages{
+    width: 250px;
+    height : 30px;
+    background-color: #505050;
+    color: white;
+}
+
+#languages option {
+    height : 30px;
+    width: 250px;
+}
+
+.search-bar > form > hr{
+    margin-top: 3vh;
+    width: 90vw;
+}
+
 .header06 h1{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -899,10 +926,10 @@ svg{
 .sixth > main{
     position: absolute;
     width: 90vw;
-    height: 80vh;
+    height: 75vh;
     display: flex;
-    top: 16vh;
-    left: 4vw;
+    top: 19vh;
+    left: 5vw;
     gap: 4vw;
 }
 
@@ -917,8 +944,45 @@ svg{
 
 .sixth main> section > img{
     width: 25vw;
+    height: 30vh;
+    filter: brightness(85%) contrast(120%)  saturate(150%) ;
     padding-left: 1vw;
 }
+
+.sixth main> section > ul{
+    list-style-type: none;
+    padding-left: 4vw;
+}
+
+.sixth main> section > ul > li{
+    margin-top: 13px;
+}
+
+.sixth main> section > ul > li > i{
+    margin-right: 10px;
+}
+
+.sixth .slide-left{
+    width:30px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 10px;
+    top: 48%;
+    background-color: #404040;
+    border: unset;
+}
+
+.sixth .slide-right{
+    width:30px;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 10px;
+    top: 48%;
+    background-color: #404040;
+    border: unset;
+}
+
+
 /*------------ seventh view --------------*/
 
 .seven{
