@@ -881,6 +881,9 @@ svg{
 
 .search-bar{
     height: 6vh;
+    left: 3vw;
+    display: inline;
+    position: relative;
 }
 .header06 h1{
     margin-top: 10px;
@@ -912,6 +915,10 @@ svg{
     text-align: center;
 }
 
+.sixth main> section > img{
+    width: 25vw;
+    padding-left: 1vw;
+}
 /*------------ seventh view --------------*/
 
 .seven{
