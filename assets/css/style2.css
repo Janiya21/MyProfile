@@ -927,43 +927,60 @@ svg{
     position: absolute;
     width: 90vw;
     height: 75vh;
+    top: 19vh;
+    left: 5vw;
+    overflow: hidden;
+    /*border: 5px solid white;*/
+}
+
+.project-slider{
+    position: absolute;
+    width: 90vw;
+    height: 75vh;
+    display: flex;
+    transition: all 0.4s;
+}
+
+.slideView {
+    width: 90vw;
+    height: 75vh;
     display: flex;
     top: 19vh;
     left: 5vw;
     gap: 4vw;
 }
 
-.sixth main> section{
+.slideView >section{
     width: 30vw;
     background-color: #343333;
 }
 
-.sixth main> section > h2{
+.slideView  >section > h2{
     text-align: center;
 }
 
-.sixth main> section > img{
+.slideView  >section > img{
     width: 25vw;
     height: 30vh;
     filter: brightness(85%) contrast(120%)  saturate(150%) ;
     padding-left: 1vw;
 }
 
-.sixth main> section > ul{
+.slideView  >section > ul{
     list-style-type: none;
     padding-left: 4vw;
     height: 18vh;
 }
 
-.sixth main> section > ul > li{
+.slideView  >section > ul > li{
     margin-top: 13px;
 }
 
-.sixth main> section > ul > li > i{
+.slideView  >section > ul > li > i{
     margin-right: 10px;
 }
 
-.sixth .slide-left{
+.sixth .left-sliding{
     width:30px;
     transform: rotate(90deg);
     position: absolute;
@@ -973,7 +990,7 @@ svg{
     border: unset;
 }
 
-.sixth .slide-right{
+.sixth .right-sliding{
     width:30px;
     transform: rotate(270deg);
     position: absolute;
@@ -983,23 +1000,23 @@ svg{
     border: unset;
 }
 
-.sixth > main > section >p{
+.slideView  >section >p{
     position: absolute;
     padding-bottom: 2vh;
     padding-left: 4vw;
     font-size: 1em;
 }
 
-.sixth > main > section >p>a{
+.slideView >section >p>a{
     text-decoration: none;
     color: #0074D9;
 }
 
-.sixth > main > section >p> i{
+.slideView  >section >p> i{
     padding-right: 10px;
 }
 
-.sixth > main > section >p> a{
+.slideView  >section >p> a{
     padding-left: 27px;
     font-size: 1.2em;
 }
