@@ -507,7 +507,7 @@
 .progress ul{
     background: black;
     position: relative;
-    height: 90%;
+    height: 100%;
     width: 150vw;
     margin: 0;
     padding: 0;
@@ -522,7 +522,6 @@
     margin: 0 35px 0 0;
     font-size: 16px;
 }
-
 
 .progress img{
     margin-bottom: 20px;
@@ -600,7 +599,6 @@
 
 @media all and (min-width: 500px) and (max-width: 1600px){
 
-
     .progress ul {
         width: max-content;
         animation-name: slider;
@@ -611,7 +609,6 @@
 
     .progress ul li h2 {
         margin: 11px 0 25px 0;
-        font-size: 3vw;
     }
 
     .progress ul li p {
@@ -630,10 +627,6 @@
     .progress {
         margin: 120px auto;
         height: 64vh;
-    }
-
-    .progress img {
-        width: 65px;
     }
 }
 
@@ -733,16 +726,24 @@
     width: 100%;
 }
 
-.tech img{
-    /*width: 15%;*/
+.tech>div{
+    width: 15%;
     float: left;
     height: 100%;
-    padding-top: 12vh;
+    padding-top: 8vh;
+    background-color: transparent;
+}
+
+.tech>div>img{
+    width: 100%;
+    float: left;
+    height: 100%;
+    padding-top: 1vh;
     background-color: transparent;
 }
 
 .tech ul{
-    width: 28vw;
+    width: 24vw;
     margin-top: 10vh;
     padding-left: 60px;
     position: relative;
@@ -752,32 +753,31 @@
 .tech .skill{
     position: relative;
     height: 100%;
+    width: 21vw;
+    top: 9vh;
 }
-
-/*.skill svg{
-    width: 8vw;
-}*/
 
 #number, #number2, #number3 , #number4, #number5, #number6{
     font-weight: bolder;
-    color: blanchedalmond;
-    position: relative;
-    left: 65px;
-    top: 95px;
+    color: #1f8eaa;
+    position: absolute;
+    left: 4vw;
+    top: 1vh;
     z-index: 1;
 }
 
-circle{
-    stroke: url(#GradientColor);
-    stroke-width: 1.1vw;
-    stroke-dasharray: 31vw;
-    stroke-dashoffset: 31vw;
-    animation: anim 2s linear forwards;
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 2vw;
+    width: 0;
 }
 
-svg{
-    position: relative;
-    margin-top: 2vh;
+@keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
 }
 
 @keyframes anim{
@@ -889,12 +889,16 @@ svg{
     }
 
     .fifth main .stack {
-
         height: 78vh;
         margin-left: 8vw;
         grid-template-columns: 1fr 1fr;
         row-gap: 8vh;
         overflow: scroll;
+    }
+
+    .stack >div::before {
+        width: 60%;
+        height: 90%;
     }
 }
 
@@ -904,16 +908,26 @@ svg{
     }
 
     .fifth main {
-        width: 80vw;
+        margin-left: 10vw;
+        width: 85vw;
+    }
+
+    .stack >div {
+        position: relative;
+        padding-left: 12vw;
     }
 
     .fifth main .stack {
-        margin-left: 18vw;
         overflow-x: hidden;
-        width: 60vw;
+        width: 85vw;
         overflow-y: scroll;
         grid-template-columns: 1fr;
         row-gap: 8vh;
+    }
+
+    .stack >div::before {
+        width: 60%;
+        height: 90%;
     }
 }
 /*------------ sixth view --------------*/
