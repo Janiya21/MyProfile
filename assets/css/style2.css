@@ -829,8 +829,59 @@ svg{
 }
 
 .fifth main .stack img{
-    width: 22vw;
+    width: 19vw;
 }
+
+/*-------------*/
+
+.stack >div {
+    position: relative;
+}
+.stack >div::before {
+    position: absolute;
+    top: 0;
+    left: 6%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 30%;
+    height: 50%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.stack >div:hover::before {
+    -webkit-animation: shine .95s;
+    animation: shine .95s;
+    /*animation-direction: alternate;*/
+    animation-iteration-count:1;
+    animation-direction: inherit;
+}
+@-webkit-keyframes shine {
+    0%{
+        left: 0;
+    }
+    40%{
+        left: 30%;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes shine {
+    0%{
+        left: 0;
+    }
+    40%{
+        left: 30%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*------------------*/
 
 @media all and (min-width: 500px) and (max-width: 768px){
     .fifth main .stack img{
