@@ -4,7 +4,7 @@
     height: 100vh;
     position: relative;
     background-size: 100% 100%;
-    margin: 0;
+    margin: 0 0 -11px 0;
 }
 
 .view> header> h1{
@@ -13,12 +13,12 @@
 /* --------------- first view ------------------ */
 
 .first{
-    margin:0 0 1% 0;
-    background-image: url('../images/cod9.jpg');
+    margin:0;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/dark4.jpg");
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-position: -15% 20%;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .first nav{
@@ -32,16 +32,17 @@
 }
 
 .header01{
-    flex-basis: 40%;
-    padding-left: 2%;
+    flex-basis: 35%;
+    padding-left: 5%;
 }
 
 .header01 h2{
-    font-family: "Work Sans", serif;
+    /*font-family: "Bradley Hand ITC", serif;*/
+    font-family: 'Vollkorn SC', serif;
     font-weight: bold;
     padding-left: 3%;
     padding-top: 1%;
-    font-size: 1.52em;
+    font-size: 1.2em;
 }
 
 .first .myName{
@@ -49,15 +50,23 @@
     font-family: 'Vollkorn SC', serif;
     margin: 0 10px 0 10px;
     font-size: 1.26vw;
-    left: 6%;
-    top: 3%;
+    left: 35%;
+    top: 17vh;
     z-index: 1;
     display: inline-block;
 }
 
 .first .myName h1{
     font-size: 2.8em;
-    color: #927341;
+    color: #bdbdbd;
+    font-family: "Vollkorn SC", serif;
+}
+
+.first .myName p{
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    font-size: 0.9em;
+    color: #e5e5e5;
     font-family: "Vollkorn SC", serif;
 }
 
@@ -77,7 +86,7 @@
     max-width: 56%;
     text-align: right;
     position: relative;
-    font-size: 1.3em;
+    font-size: 0.8em;
     right: 1%;
 }
 
@@ -126,12 +135,12 @@
 }
 
 .myPhoto{
-    width: 30%;
-    /*height: 28%;*/
+    width: 28%;
+    /* height: 28%; */
     position: absolute;
     border-radius: 50%;
     top: 50%;
-    left: 37%;
+    left: 33%;
     transform: translateY(-50%);
     z-index: 1;;
 }
@@ -139,10 +148,10 @@
 .overlay {
     width: 0;
     height: 0;
-    border-top: 50vh solid #ffffff;
+    border-top: 50vh solid #ffffff91;
     border-right: 30vw solid transparent;
-    border-bottom: 50vh solid #ffffff;
-    border-left: 30vw solid #ffffff;
+    border-bottom: 50vh solid #b7b7b7c9;
+    border-left: 30vw solid #9d9d9d9e;
     position: absolute;
     left: 0;
     top: 0;
@@ -153,9 +162,10 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px){
-
     .header01 {
-        flex-basis: 36%;
+        flex-basis: 32%;
+        padding-left: 5%;
+        width: 43vw;
     }
 
     .nav-links{
@@ -168,15 +178,11 @@
         font-size: 0.9em;
     }
 
-    .overlay {
-        border-left: 30vw solid #ffffff;
-    }
-
     .first .myName {
         font-size: 1.4vw;
-        left: 8%;
-        top: 4%;
-        width: 20vw;
+        left: 35%;
+        top: 17vh;
+        width: 34vw;
     }
 
     .myPhoto{
@@ -190,10 +196,6 @@
 
     .header01 {
         flex-basis: 36%;
-    }
-
-    .overlay {
-        border-left: 28vw solid #ffffff;
     }
 
     .nav-links{
@@ -211,10 +213,10 @@
     }
 
     .first .myName {
-        font-size: 1.46vw;
-        left: 9%;
-        top: 5%;
-        width: 25vw;
+        font-size: 1.4vw;
+        left: 39%;
+        top: 22vh;
+        width: 34vw;
     }
 
     .myPhoto {
@@ -480,8 +482,10 @@
 
 .third{
     background-position: -15% 20%;
-    background-color: #000000;
     color: white;
+    /*background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/bl4.jpg");
+    backdrop-filter: blur(20px);*/
+    background-color: black;
 }
 
 .header03 h1{
@@ -502,10 +506,11 @@
     width: 92vw;
     left: 3vw;
     overflow: hidden;
+    background-color: transparent;
 }
 
 .progress ul{
-    background: black;
+    background-color: transparent;
     position: relative;
     height: 100%;
     width: 150vw;
@@ -936,6 +941,7 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
+    margin: 0;
 }
 
 .search-bar input[type=text] {
@@ -973,7 +979,7 @@
 }
 
 .search-bar > form > hr{
-    margin-top: 3vh;
+    margin-top: 2vh;
     width: 90vw;
 }
 
@@ -992,7 +998,7 @@
     position: absolute;
     width: 90vw;
     height: 75vh;
-    top: 19vh;
+    top: 20vh;
     left: 5vw;
     overflow: hidden;
     /*border: 5px solid white;*/
@@ -1018,6 +1024,7 @@
 .slideView >section{
     width: 30vw;
     background-color: #343333;
+    border-radius: 40px
 }
 
 .slideView  >section > h2{
@@ -1025,10 +1032,10 @@
 }
 
 .slideView  >section > img{
-    width: 25vw;
-    height: 30vh;
-    filter: brightness(85%) contrast(120%)  saturate(150%) ;
-    padding-left: 1vw;
+    width: 23vw;
+    height: 27vh;
+    filter: brightness(85%) contrast(120%) saturate(150%);
+    padding-left: 2.6vw;
 }
 
 .slideView  >section > ul{
@@ -1067,9 +1074,9 @@
 
 .slideView  >section >p{
     position: absolute;
-    padding-bottom: 2vh;
     padding-left: 4vw;
     font-size: 1em;
+    width: 19vw;
 }
 
 .slideView >section >p>a{
