@@ -860,7 +860,7 @@
     }
 }
 
-@media all and (min-width: 480px) and (max-width: 620px){
+@media all and (min-width: 460px) and (max-width: 620px){
     .fourth main {
         width: 84vw;
         float: none;
@@ -890,6 +890,63 @@
         height: 2.4vh;
         bottom: 1vh;
     }
+}
+
+@media all and (max-width: 460px){
+    .tech {
+        display: flex;
+        flex-direction: column;
+        height: 55vh;
+    }
+
+    .fourth main {
+        top: 2vh;
+        width: 73vw;
+        max-height: 83vh;
+        left: 23vw;
+        float: left;
+    }
+
+    .tech>div {
+        width: 42%;
+        padding-top: 5vh;
+        background-color: transparent;
+        padding-left: 11vw;
+    }
+
+    .tech ul {
+        width: 54vw;
+        margin-top: 10vh;
+        padding-left: 4vw;
+        position: relative;
+        font-size: 0.9em;
+    }
+
+    .tech .skill {
+        position: relative;
+        height: 100%;
+        width: 47vw;
+        top: 0;
+
+    }
+
+    .progress-value {
+        animation: load 3s normal forwards;
+        height: 3vh;
+        right: 9vw;
+        bottom: 0.2vh;
+    }
+
+    #number, #number2, #number3, #number4, #number5, #number6 {
+        left: 14vw;
+        top: 5vh;
+    }
+
+    .tech>div>img {
+        margin-left: -14px;
+        position: relative;
+    }
+
 }
 
 /*------------ Fifth view --------------*/
