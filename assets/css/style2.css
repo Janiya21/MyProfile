@@ -255,7 +255,7 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/cod9.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/progress1.jpg");
     backdrop-filter: blur(8px);
 }
 
@@ -594,7 +594,7 @@
     }
 
     50%,75%{
-        right: 25vw;
+        right: 15vw;
     }
     100%{
         right: 40vw;
@@ -796,7 +796,7 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/cod9.jpg");
+    /*background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/cod9.jpg");*/
 }
 
 .header05 h1{
