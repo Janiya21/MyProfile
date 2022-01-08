@@ -1371,7 +1371,7 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/myBlack3.jpeg");
+    /*background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/myBlack3.jpeg");*/
     width: 100%;
     height: 113vh;
     position: relative;
@@ -1431,7 +1431,7 @@
 
 .seven .side-left #btn-call-me{
     position: relative;
-    top: 4vh;
+    top: 3vh;
     background-color: rgba(139, 112, 61, 0.66);
     border-color: rgba(154, 121, 64, 0.78);
     color: white;
@@ -1439,7 +1439,7 @@
 
 .seven .side-left #btn-gmail{
     position: relative;
-    top: 6vh;
+    top: 3vh;
     background-color: rgba(116, 55, 55, 0.43);
     border-color: rgba(88, 48, 48, 0.8);
     color: white;
@@ -1447,7 +1447,7 @@
 
 .seven .side-left #btn-whatsapp{
     position: relative;
-    top: 8vh;
+    top: 3vh;
     background-color: rgba(30, 75, 35, 0.54);
     border-color: rgba(38, 73, 29, 0.85);
     color: white;
@@ -1499,6 +1499,23 @@
 
 .logos > a > img{
     width: 4vw;
+    top: 2vh;
+    position: relative;
+    left: 1.4vw;
+}
+
+.logos > a:nth-child(2) > img{
+    width: 3vw;
+    top: 2vh;
+    position: relative;
+    left: 1.4vw;
+}
+
+.logos > a:nth-child(3) > img{
+    width: 5vw;
+    top: 2vh;
+    position: relative;
+    left: 1vw;
 }
 
 @media all and (min-width: 525px) and (max-width: 768px){
