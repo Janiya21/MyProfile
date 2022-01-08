@@ -256,7 +256,7 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/lap9.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/cod9.jpg");
     backdrop-filter: blur(8px);
 }
 
@@ -483,8 +483,8 @@
 .third{
     background-position: -15% 20%;
     color: white;
-    /*background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/bl4.jpg");
-    backdrop-filter: blur(20px);*/
+    /*background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/comp2.jpg");*/
+    backdrop-filter: blur(20px);
     background-color: black;
 }
 
@@ -542,7 +542,7 @@
 .progress ul li p{
     position: relative;
     text-align: center;
-    background: #000000;
+    background: transparent;
     height: 120px;
     color: #c4c4c4;
 }
@@ -618,7 +618,6 @@
 
     .progress ul li p {
         font-size: 0.8em;
-        background: #000000;
     }
 
     .progress ul li {
@@ -681,7 +680,7 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/lap7.jpg");
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/hand1.jpg");
     backdrop-filter: blur(8px);
 }
 
@@ -798,6 +797,7 @@
     background-position: -15% 20%;
     background-color: #000000;
     color: white;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/cod9.jpg");
 }
 
 .header05 h1{
@@ -940,6 +940,7 @@
 .sixth{
     background-position: -15% 20%;
     background-color: #000000;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/dark2.jpg");
     color: white;
     margin: 0;
 }
@@ -1001,6 +1002,7 @@
     top: 20vh;
     left: 5vw;
     overflow: hidden;
+    background-color: transparent;
     /*border: 5px solid white;*/
 }
 
@@ -1023,7 +1025,7 @@
 
 .slideView >section{
     width: 30vw;
-    background-color: #343333;
+    background-color: rgba(0, 0, 0, 0.56);
     border-radius: 40px
 }
 
@@ -1140,7 +1142,7 @@
 }
 
 .seven main{
-    height: 88vh;
+    height: 90vh;
     display: flex;
     column-gap: 20px;
 }
