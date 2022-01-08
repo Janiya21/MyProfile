@@ -178,15 +178,15 @@
     }
 
     .first .myName {
-        font-size: 1.4vw;
-        left: 35%;
-        top: 17vh;
-        width: 34vw;
+        font-size: 0.5em;
+        left: 39%;
+        top: 20vh;
+        width: 40vw;
     }
 
     .myPhoto{
         width: 212px;
-        left: 30%;
+        left: 25%;
     }
 
 }
@@ -225,7 +225,7 @@
     }
 }
 
-@media all and (max-width: 630px){
+@media all and (min-width: 480px) and (max-width: 630px){
     .menu-expand{
         display: block;
     }
@@ -238,8 +238,10 @@
         margin-right: auto;
     }
 
-    .first .myName {
-        display: none;
+    .first .myName{
+        font-size: 0.45em;
+        left: 40%;
+        top: 18vh;
     }
 
     .myPhoto {
@@ -248,6 +250,35 @@
         left: 29%;
     }
 }
+
+@media all and (max-width: 480px){
+    .menu-expand{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .header01{
+        margin-right: auto;
+    }
+
+    .header01 h2{
+        font-size: 1em;
+    }
+
+    .first .myName{
+       display: none;
+    }
+
+    .myPhoto {
+        top: 51%;
+        left: 22%;
+        width: 140px;
+    }
+}
+
 
     /*------------ Second view --------------*/
 
@@ -440,6 +471,13 @@
         left: 0;
         margin: auto;
         position: absolute;
+    }
+
+    .sub-header h2{
+        text-align: center;
+        font-family: "Work Sans", serif;
+        font-size: 1.1em;
+        padding-top: 1%;
     }
 
     .split{
@@ -774,8 +812,9 @@
     box-shadow: 0 10px 40px -10px #fff;
     border-radius: 100px;
     background: #fff;
-    height: 2vw;
-    width: 0;
+    height: 3vh;
+    position: relative;
+    bottom: 0.2vh;
 }
 
 @keyframes load {
@@ -787,6 +826,69 @@
     100%{
         /*stroke-dashoffset: 140; !* 17vw;*!*/
         stroke-dashoffset: 120%;
+    }
+}
+
+@media all and (min-width: 620px) and (max-width: 1024px){
+    .fourth main {
+        width: 80vw;
+        float: none;
+        left: 20vw;
+    }
+
+    .tech .skill {
+        width: 22vw;
+        top: 8vh;
+        left: 5vw;
+    }
+
+    #number, #number2, #number3, #number4, #number5, #number6 {
+        left: 5vw;
+        bottom: 1vh;
+        top: 7vh;
+        font-size: 0.8em;
+    }
+
+    .tech ul {
+        margin-top: 9vh;
+        font-size: 1.6vw;
+    }
+
+    .progress-value {
+        height: 2.4vh;
+        bottom: 1vh;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 620px){
+    .fourth main {
+        width: 84vw;
+        float: none;
+        left: 15vw;
+    }
+
+    .tech .skill {
+        width: 25vw;
+        top: 5vh;
+        left: 5vw;
+    }
+
+    #number, #number2, #number3, #number4, #number5, #number6 {
+        left: 5vw;
+        bottom: 1vh;
+        top: 7vh;
+        font-size: 0.8em;
+    }
+
+    .tech ul {
+        margin-top: 9vh;
+        font-size: 1.8vw;
+        width: 27vw;
+    }
+
+    .progress-value {
+        height: 2.4vh;
+        bottom: 1vh;
     }
 }
 
