@@ -729,9 +729,9 @@
 
 .fourth main{
     top: 3vh;
-    color: #ffffff;
+    color: #c3c3c3;
     overflow-y: scroll;
-    width: 68vw;
+    width:72vw;
     max-height: 83vh;
     float: right;
     background-color: transparent;
@@ -778,7 +778,7 @@
 }
 
 .tech ul{
-    width: 24vw;
+    width: 28vw;
     margin-top: 10vh;
     padding-left: 60px;
     position: relative;
@@ -802,10 +802,10 @@
 }
 
 .progress-value {
-    animation: load 3s normal forwards;
-    box-shadow: 0 10px 40px -10px #fff;
+    /*animation: load 3s normal forwards;*/
+    box-shadow: 0 10px 40px -10px rgba(255, 255, 255, 0.8);
     border-radius: 100px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.87);
     height: 3vh;
     position: relative;
     bottom: 0.2vh;
@@ -1169,6 +1169,7 @@
     height: 75vh;
     display: flex;
     transition: all 0.4s;
+    color: #c5c5c5;
 }
 
 .slideView {
@@ -1347,13 +1348,14 @@
 
     .slideView > section {
         width: 79vw;
-        background-color: rgba(0, 0, 0, 0.56);
+        background-color: rgba(87, 87, 87, 0.56);
         border-radius: 40px;
     }
 
     .slideView > section > img {
         width: 63vw;
         padding-left: 7.6vw;
+        border-radius: 0;
     }
 
     .slideView > section > ul {
@@ -1385,7 +1387,7 @@
 .seven{
     background-position: -15% 20%;
     background-color: #000000;
-    color: white;
+    color: #d3d0d0;
     /*background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.8)) , url("../images/myBlack3.jpeg");*/
     width: 100%;
     height: 113vh;
@@ -1449,7 +1451,7 @@
     top: 3vh;
     background-color: rgba(139, 112, 61, 0.66);
     border-color: rgba(154, 121, 64, 0.78);
-    color: white;
+    color: #e0e0e0;
 }
 
 .seven .side-left #btn-gmail{
@@ -1457,7 +1459,7 @@
     top: 3vh;
     background-color: rgba(116, 55, 55, 0.43);
     border-color: rgba(88, 48, 48, 0.8);
-    color: white;
+    color: #e0e0e0;
 }
 
 .seven .side-left #btn-whatsapp{
@@ -1465,7 +1467,7 @@
     top: 3vh;
     background-color: rgba(30, 75, 35, 0.54);
     border-color: rgba(38, 73, 29, 0.85);
-    color: white;
+    color: #e0e0e0;
 }
 
 .seven > hr{
