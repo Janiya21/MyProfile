@@ -355,10 +355,10 @@
 }
 
 .right p{
-    letter-spacing: 0.2em;
-    word-spacing: 0.1em;
-    font-family: "Vollkorn SC", serif;
+    letter-spacing: 0.1em;
     text-align: justify;
+    color: #f1ececd1;
+    font-family: "Vollkorn SC", serif;
     font-size: 0.6em;
 }
 
@@ -409,10 +409,9 @@
     transition: 0s
 }
 
-@media all and (min-width: 325px) and (max-width: 768px){
+@media all and (min-width: 500px) and (max-width: 768px){
     .left {
-        padding-top: 20px;
-        height: 35%;
+        height: 55%;
         width: 92vw;
     }
     .left > img{
@@ -428,10 +427,10 @@
     }
 
     .right {
-        width: 80%;
+        width: 83%;
         position: relative;
-        padding-top: 0;
-        right: 10%;
+        float: none;
+        left: 9vw;
         height: 60%;
     }
 
@@ -459,12 +458,13 @@
 
 }
 
-@media all and (max-width: 425px){
+@media all and (max-width: 500px){
     .left {
         padding-top: 20px;
-        height: 30%;
+        height: 40%;
         width: 88vw;
     }
+
     .left > img{
         width:260px;
         right: 0;
@@ -485,19 +485,15 @@
     }
 
     .right {
-        width: 80%;
-        position: relative;
-        padding-top: 10px;
-        right: 10%;
-        height: 75%;
+        width: 77%;
+        top: 3vh;
+        height: 60%;
+        float: none;
+        left: 12vw;
     }
 
     .right p{
-        letter-spacing: 0.1em;
-        word-spacing: 0.2em;
-        font-family: "Vollkorn SC", serif;
-        text-align: justify;
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 
     .right > p:nth-child(3){
@@ -651,6 +647,7 @@
 
     .progress ul li h2 {
         margin: 11px 0 25px 0;
+        font-size: 3vw;
     }
 
     .progress ul li p {
@@ -674,7 +671,6 @@
 @media all and (max-width: 500px){
     .progress ul li {
         text-align: center;
-        /* display: inline-block; */
         width: 49vw;
         position: relative;
         height: 38vh;
@@ -744,19 +740,19 @@
 
 .fourth main::-webkit-scrollbar-track
 {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background-color: #bbbbbb;
+    -webkit-box-shadow: inset 0 0 6px rgb(20 15 15);
+    background-color: #120d0d
 }
 
 .fourth main::-webkit-scrollbar
 {
-    width: 10px;
-    background-color: #6e74b1;
+    width: 3px;
+    background-color: #282828;
 }
 
 .fourth main::-webkit-scrollbar-thumb
 {
-    background-color: #687dc6;
+    background-color: #53555c;
     border: 2px solid #555555;
 }
 
@@ -1044,8 +1040,6 @@
     }
 }
 
-/*------------------*/
-
 @media all and (min-width: 500px) and (max-width: 768px){
     .fifth main .stack img{
         width: 30vw;
@@ -1067,7 +1061,8 @@
 
 @media all and (max-width: 500px){
     .fifth main .stack img{
-        width: 75vw;
+        width: 65vw;
+        padding-left: 1.2vw;
     }
 
     .fifth main {
@@ -1276,6 +1271,17 @@
     }
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .slideView >section > img {
+        height: 19vh;
+    }
+
+    .slideView >section > h2 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
 @media all and (min-width: 575px) and (max-width: 768px){
 
     .slideView >section > h2 {
@@ -1314,7 +1320,7 @@
     }
 }
 
-@media all and (max-width: 575px){
+@media all and (min-width: 350px) and (max-width: 575px) {
     .project-slider {
         position: absolute;
         width: 200vw;
@@ -1334,37 +1340,41 @@
         gap: 16vw;
     }
 
-    .slideView >section {
+    .slideView > section {
         width: 79vw;
         background-color: rgba(0, 0, 0, 0.56);
         border-radius: 40px;
     }
 
-    .slideView >section > img {
+    .slideView > section > img {
         width: 63vw;
         padding-left: 7.6vw;
     }
-    .slideView >section > ul {
+
+    .slideView > section > ul {
         padding-left: 10vw;
         height: 18vh;
     }
-    .slideView >section >p {
+
+    .slideView > section > p {
         padding-left: 10vw;
         font-size: 0.9em;
         width: 50vw;
         position: relative;
     }
 
-    .slideView >section >p> a {
+    .slideView > section > p > a {
         padding-left: 4vw;
         font-size: 1.1em;
     }
 
-    .slideView >section > ul > li {
+    .slideView > section > ul > li {
         font-size: 0.9em;
     }
-
 }
+
+
+
 /*------------ seventh view --------------*/
 
 .seven{
