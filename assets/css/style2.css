@@ -20,6 +20,10 @@
     font-size: 25px;
 }
 
+.slider-view-one{
+    display: none;
+}
+
 .first nav{
     position: relative;
     height: auto;
@@ -254,6 +258,42 @@
 @media all and (max-width: 480px){
     .menu-expand{
         display: block;
+    }
+
+    .slider-view-one{
+        display: none;
+        position: absolute;
+        border: 2px solid wheat;
+        top: 3vh;
+        color: black;
+        background-color: #1e1e1ef7;
+        width: 95vw;
+    }
+
+    .slider-view-one > .menu-hide{
+        transform: rotate(-90deg);
+    }
+
+    .slider-view-one > .menu-hide > img{
+        position: relative;
+        width: 10px;
+    }
+
+    .slider-view-one > ul{
+        top: 8vh;
+        position: relative;
+        color: black;
+        height: 80vh;
+    }
+
+    .slider-view-one > ul > li{
+        padding-top: 5vh;
+        padding-left: 20vw;
+        font-size: 0.9em;
+    }
+
+    .slider-view-one > ul > li > a{
+        color: rgba(255, 255, 255, 0.69);
     }
 
     .nav-links{
@@ -1189,7 +1229,7 @@
 }
 
 .slideView >section{
-    width: 30vw;
+    width: 28vw;
     background-color: rgba(125, 125, 125, 0.4);
     border-radius: 40px
 }
@@ -1199,7 +1239,7 @@
 }
 
 .slideView  >section > img{
-    width: 23vw;
+    width: 22vw;
     height: 27vh;
     filter: brightness(85%) contrast(120%) saturate(150%);
     margin-left: 2.6vw;
@@ -1247,18 +1287,23 @@
     width: 19vw;
 }
 
+/*
 .slideView >section >p>a{
     text-decoration: none;
     color: #0074D9;
 }
+*/
 
 .slideView  >section >p> i{
     padding-right: 10px;
 }
 
 .slideView  >section >p> a{
+    text-decoration: none;
+    color: #0074D9;
     padding-left: 27px;
-    font-size: 1.2em;
+    font-size: 1em;
+    top: 1vh;
 }
 
 .underline{

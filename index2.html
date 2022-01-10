@@ -14,7 +14,7 @@
             body{
                 background-position: -15% 20%;
                 background-color: #000000;
-                background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("../images/dark2.jpg");
+                /*background-image:  linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.8)) , url("assets/images/dark2.jpg");*/
                 color: white;
                 margin: 0;
             }
@@ -31,7 +31,7 @@
 
             .project-slider{
                 position: absolute;
-                width: 90vw;
+                width: 180vw;
                 flex-direction: column;
                 height: 95vh;
                 display: flex;
@@ -41,12 +41,11 @@
             }
 
             .slideView {
-                width: 90vw;
                 height: 75vh;
                 display: flex;
                 top: 19vh;
                 left: 5vw;
-                gap: 4vw;
+                gap: 3vw;
             }
 
             .slideView >section{
@@ -120,8 +119,8 @@
                 color: #0074D9;
                 padding-left: 20px;
                 position: relative;
-                top: 2vh;
-                font-size: 0.8em;
+                top: 1vh;
+                font-size: 1.2em;
             }
 
             .underline{
@@ -141,115 +140,11 @@
 
             @media (hover: hover) and (pointer: fine) {
             .underline:hover::before{
-                    left: 0;
+                    left: 1vw;
                     right: auto;
-                    width: 120%;
+                    width: 100%;
                 }
             }
-
-            @media all and (min-width: 768px) and (max-width: 1024px){
-            .slideView >section > img {
-                    height: 19vh;
-                }
-
-            .slideView >section > h2 {
-                    text-align: center;
-                    font-size: 1.2em;
-                }
-            }
-
-            @media all and (min-width: 575px) and (max-width: 768px){
-
-            .slideView >section > h2 {
-                    text-align: center;
-                    font-size: 0.8em;
-                }
-            .slideView >section > img {
-                    height: 17vh;
-                }
-            .slideView >section > ul {
-                    height: 21vh;
-                    font-size: 0.7em;
-                }
-            .slideView >section >p {
-                    position: absolute;
-                    padding-left: 4vw;
-                    font-size: 0.7em;
-                    width: 19vw;
-                }
-
-            .slideView >section >p> a {
-                    padding-left: 27px;
-                    font-size: 1.1em;
-                }
-
-            .left-sliding {
-                    width: 22px;
-                    right: 7px;
-                    top: 52%;
-                }
-
-            .sixth .right-sliding {
-                    width: 22px;
-                    top: 52%;
-                    border: unset;
-                }
-            }
-
-            @media all and (min-width: 350px) and (max-width: 575px) {
-            .project-slider {
-                    position: absolute;
-                    width: 200vw;
-                    display: flex;
-                    transition: all 0.4s;
-                }
-
-            .slideView {
-                    width: 82vw;
-                    padding-left: 5vw;
-                    overflow-y: auto;
-                    height: 80vh;
-                    display: flex;
-                    flex-direction: column;
-                    top: 19vh;
-                    /* left: 29vw; */
-                    gap: 16vw;
-                }
-
-            .slideView > section {
-                    width: 79vw;
-                    background-color: rgba(87, 87, 87, 0.56);
-                    border-radius: 40px;
-                }
-
-            .slideView > section > img {
-                    width: 63vw;
-                    padding-left: 7.6vw;
-                    border-radius: 0;
-                }
-
-            .slideView > section > ul {
-                    padding-left: 10vw;
-                    height: 18vh;
-                }
-
-            .slideView > section > p {
-                    padding-left: 10vw;
-                    font-size: 0.9em;
-                    width: 50vw;
-                    position: relative;
-                }
-
-            .slideView > section > p > a {
-                    padding-left: 4vw;
-                    font-size: 1.1em;
-                }
-
-            .slideView > section > ul > li {
-                    font-size: 0.9em;
-                }
-            }
-
 
         </style>
     </head>
@@ -304,8 +199,8 @@
                         </p>
                     </section>
                     <section>
-                        <h2>Assignment 06</h2>
-                        <img src="assets/images/assi.png" alt=""/>
+                        <h2>Assignment 04</h2>
+                        <img src="assets/images/assi-04.png" alt=""/>
                         <ul>
                             <li><i class="fa fa-code" aria-hidden="true"></i>Knowledge of sticky positions</li>
                             <li><i class="fa fa-code" aria-hidden="true"></i>margins, paddings, borders etc </li>
@@ -313,42 +208,11 @@
                         <p>
                             <i class="fa fa-code-fork" aria-hidden="true"></i>
                             You can find the source code on<br>
-                            <a href="myAssignments/CSS/Assignment_06/index.html" class="underline">go to Assignment 06</a>
+                            <a href="myAssignments/CSS/Assignment_04/index.html" class="underline">go to Assignment 04</a>
                         </p>
                     </section>
 
-                </div>
 
-                <div class="slideView second-group">
-                    <section>
-                        <h2>Assignment 07</h2>
-                        <img src="assets/images/assi-06.png" alt=""/>
-                        <ul>
-                            <li><i class="fa fa-code" aria-hidden="true"></i>Knowledge of sticky positions</li>
-                            <li><i class="fa fa-code" aria-hidden="true"></i>margins, paddings, borders etc </li>
-                        </ul>
-                        <p>
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            You can find the source code on<br>
-                            <a href="myAssignments/CSS/Assignment_07/index.html" class="underline">go to Assignment 07</a>
-
-                        </p>
-                    </section>
-
-                    <section>
-                        <h2>Assignment 08</h2>
-                        <img src="assets/images/asi.png" alt=""/>
-                        <ul>
-                            <li><i class="fa fa-code" aria-hidden="true"></i>Knowledge of sticky,absolute positions</li>
-                            <li><i class="fa fa-code" aria-hidden="true"></i>Animations and its attributes well used </li>
-                        </ul>
-                        <p>
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            You can find the source code on<br>
-                            <a href="myAssignments/CSS/Assignment_08/index.html" class="underline">go to Assignment 08</a>
-
-                        </p>
-                    </section>
                     <section>
                         <h2>Assignment 09</h2>
                         <img src="assets/images/assi-09.png" alt=""/>
@@ -378,7 +242,62 @@
                     </section>
                 </div>
 
+                <div class="slideView second-group">
+                    <section>
+                        <h2>Assignment 05</h2>
+                        <img src="assets/images/assi02.png" alt=""/>
+                        <ul>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>Same as assignment 02 but this is responsive</li>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>More about positions, sizes, margins etc </li>
+                        </ul>
+                        <p>
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            You can find the source code on<br>
+                            <a href="myAssignments/CSS/Assignment_05/index.html" class="underline">go to Assignment 05</a>
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Assignment 06</h2>
+                        <img src="assets/images/assi.png" alt=""/>
+                        <ul>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>Knowledge of sticky positions</li>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>margins, paddings, borders etc </li>
+                        </ul>
+                        <p>
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            You can find the source code on<br>
+                            <a href="myAssignments/CSS/Assignment_06/index.html" class="underline">go to Assignment 06</a>
+                        </p>
+                    </section>
 
+                    <section>
+                        <h2>Assignment 07</h2>
+                        <img src="assets/images/assi-06.png" alt=""/>
+                        <ul>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>Knowledge of sticky positions</li>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>margins, paddings, borders etc </li>
+                        </ul>
+                        <p>
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            You can find the source code on<br>
+                            <a href="myAssignments/CSS/Assignment_07/index.html" class="underline">go to Assignment 07</a>
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Assignment 08</h2>
+                        <img src="assets/images/asi.png" alt=""/>
+                        <ul>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>Knowledge of sticky,absolute positions</li>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>Animations and its attributes well used </li>
+                        </ul>
+                        <p>
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            You can find the source code on<br>
+                            <a href="myAssignments/CSS/Assignment_08/index.html" class="underline">go to Assignment 08</a>
+                        </p>
+                    </section>
+                </div>
             </div>
         </main>
 
