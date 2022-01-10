@@ -23,7 +23,7 @@
 
                 <div class="slider-view-one">
 
-                    <button class="menu-hide" onclick="showSlider()">
+                    <button class="menu-hide" onclick="hideSlider()">
                         <img src="assets/images/arrow.png" alt="this is button">
                     </button>
 
@@ -221,7 +221,6 @@
                     <ul>
                         <li>Strong proficiency in MySQL database management</li>
                         <li>Decent experience with recent versions of MySQL.</li>
-                        <li>Understanding of MySQL's underlying storage engines</li>
                         <li>Java Swing / JavaFx UI Development</li>
                         <li>Knowledge of de-facto standards in MySQL.</li>
                     </ul>
@@ -562,6 +561,13 @@
                let element = document.querySelector('.slider-view-one');
                element.setAttribute('style','display:inherit;');
            }
+
+           function hideSlider(){
+               let element = document.querySelector('.slider-view-one');
+               element.setAttribute('style','display:none;');
+           }
+
+            /*----------------------------------------------------------------*/
 
         </script>
     </body>

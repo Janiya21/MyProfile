@@ -272,6 +272,11 @@
 
     .slider-view-one > .menu-hide{
         transform: rotate(-90deg);
+        height: 30px;
+        background-color: black;
+        position: absolute;
+        right: 10vw;
+        top: 5vh;
     }
 
     .slider-view-one > .menu-hide > img{
@@ -944,7 +949,7 @@
     }
 
     .tech>div {
-        width: 42%;
+        width: 46%;
         background-color: transparent;
         padding-left: 11vw;
         height: auto;
