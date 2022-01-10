@@ -260,42 +260,6 @@
         display: block;
     }
 
-    .slider-view-one{
-        display: none;
-        position: absolute;
-        border: 2px solid wheat;
-        top: 3vh;
-        color: black;
-        background-color: #1e1e1ef7;
-        width: 95vw;
-    }
-
-    .slider-view-one > .menu-hide{
-        transform: rotate(-90deg);
-    }
-
-    .slider-view-one > .menu-hide > img{
-        position: relative;
-        width: 10px;
-    }
-
-    .slider-view-one > ul{
-        top: 8vh;
-        position: relative;
-        color: black;
-        height: 80vh;
-    }
-
-    .slider-view-one > ul > li{
-        padding-top: 5vh;
-        padding-left: 20vw;
-        font-size: 0.9em;
-    }
-
-    .slider-view-one > ul > li > a{
-        color: rgba(255, 255, 255, 0.69);
-    }
-
     .nav-links{
         display: none;
     }
