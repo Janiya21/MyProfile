@@ -54,7 +54,7 @@
     margin: 0 10px 0 10px;
     font-size: 1.26vw;
     left: 35%;
-    top: 17vh;
+    top: 19vh;
     z-index: 1;
     display: inline-block;
 }
@@ -449,7 +449,7 @@
     text-align: justify;
     color: #f1ececd1;
     font-family: "Vollkorn SC", serif;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
 .left img{
