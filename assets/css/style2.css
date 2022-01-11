@@ -165,6 +165,10 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px){
+    .slider-view-one{
+        display: none;
+    }
+
     .header01 {
         flex-basis: 32%;
         padding-left: 5%;
@@ -234,6 +238,46 @@
         display: block;
     }
 
+    .slider-view-one{
+        position: absolute;
+        border: 2px solid wheat;
+        top: 3vh;
+        color: black;
+        background-color: #1e1e1ef7;
+        width: 95vw;
+    }
+
+    .slider-view-one > .menu-hide{
+        transform: rotate(-90deg);
+        height: 30px;
+        background-color: black;
+        position: absolute;
+        right: 10vw;
+        top: 5vh;
+    }
+
+    .slider-view-one > .menu-hide > img{
+        position: relative;
+        width: 10px;
+    }
+
+    .slider-view-one > ul{
+        top: 8vh;
+        position: relative;
+        color: black;
+        height: 80vh;
+    }
+
+    .slider-view-one > ul > li{
+        padding-top: 5vh;
+        padding-left: 20vw;
+        font-size: 0.9em;
+    }
+
+    .slider-view-one > ul > li > a{
+        color: rgba(255, 255, 255, 0.69);
+    }
+
     .nav-links{
         display: none;
     }
@@ -246,6 +290,7 @@
         font-size: 0.45em;
         left: 40%;
         top: 18vh;
+        z-index: -1;
     }
 
     .myPhoto {
