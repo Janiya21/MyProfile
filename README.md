@@ -1,12 +1,20 @@
-<h2>This is my Profile </h2>
+<h2>My Profile</h2>
 
-Sample page views using html, css and basic js
+<b><h3>This Site will introduce all my information and also help you to guide me easily!!</h3><b>
 
-<img src="https://user-images.githubusercontent.com/64014377/146241549-c26d927c-aeb7-4624-a457-2517a1b65faf.png" width="600">
+You can find more details about this page using bellow Links:
+
+  site map : https://www.gloomaps.com/hJl4mlr2xg <br>
+  wire frame : https://wireframe.cc/8UMUXz <br>
+  mockup : https://www.figma.com/file/2bjZFm4ZMjsLeS0lJqf0vp/MySite?node-id=0%3A1 <br>
+  git gub website : https://janiya21.github.io/MyProfile/ <br>
+  000WebHost site : https://webfortestnov08.000webhostapp.com/ <br><br>
+  
+<img src="https://user-images.githubusercontent.com/64014377/148923226-79376636-eb75-4c94-b73a-aeba3e1982e3.png" width="600">
 
 <br>
 
-<img src="https://user-images.githubusercontent.com/64014377/146240620-51404dcc-32b7-4030-8ccc-14de061e85dd.png" width="600">
+<img src="https://user-images.githubusercontent.com/64014377/148923268-5e5279db-a906-47c7-ade5-4024c4d08ef6.png" width="600">
 
 <br>
 
