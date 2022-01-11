@@ -7,7 +7,7 @@ You can find more details about this page using bellow Links:
   site map : https://www.gloomaps.com/hJl4mlr2xg <br>
   wire frame : https://wireframe.cc/8UMUXz <br>
   mockup : https://www.figma.com/file/2bjZFm4ZMjsLeS0lJqf0vp/MySite?node-id=0%3A1 <br>
-  git gub website : https://janiya21.github.io/MyProfile/ <br>
+  git hub website : https://janiya21.github.io/MyProfile/ <br>
   000WebHost site : https://webfortestnov08.000webhostapp.com/ <br><br>
   
 <img src="https://user-images.githubusercontent.com/64014377/148923226-79376636-eb75-4c94-b73a-aeba3e1982e3.png" width="600">
