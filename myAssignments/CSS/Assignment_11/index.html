@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Design 10</title>
+  <link href="assets/css/normalize.css" rel="stylesheet">
+  <style>
+      section{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-image: url("assets/images/sky.jpg");
+      }
+
+      section>div{
+        position: absolute;
+        border: 4px solid #1b5d9a;
+        border-radius: 50%;
+        width: 5vw;
+        height: 9vh;
+
+        animation-name: drop;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes drop{
+        0%{
+          opacity: 0.5;
+          transform: scale(0);
+        }
+        80%{
+          transform: scale(1);
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+          transform: scale(1);
+        }
+      }
+
+      section>div:nth-child(1){
+        left: 10vw;
+        top: 10vh;
+      }
+      section>div:nth-child(2){
+        left: 21vw;
+        top: 78vh;
+      }
+
+      section>div:nth-child(3){
+        left: 45vw;
+        top: 46vh;
+        width: 8vw;
+        height: 15vh;
+        border: 4px solid red;
+
+        animation-name: drop;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+
+      section>div:nth-child(4){
+        left: 73vw;
+        top: 30vh;
+      }
+      section>div:nth-child(5){
+        left: 30vw;
+        top: 45vh;
+      }
+      section>div:nth-child(6){
+        left: 70vw;
+        top: 80vh;
+      }
+      section>div:nth-child(7){
+        left: 42vw;
+        top: 18vh;
+      }
+      section>div:nth-child(8){
+        left: 60vw;
+        top: 55vh;
+      }
+
+  </style>
+</head>
+<body>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</body>
+</html>
