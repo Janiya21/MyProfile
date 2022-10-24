@@ -982,7 +982,7 @@
     .tech {
         display: flex;
         flex-direction: column;
-        height: 55vh;
+        height: 45vh;
     }
 
     .fourth main {
@@ -1030,7 +1030,12 @@
     .tech>div>img {
         margin-left: -14px;
         position: relative;
+        margin-bottom: -3vh;
         height: 14vh;
+    }
+
+    .img-two > img {
+        margin-top: -6vh;
     }
 
     .img-one{
