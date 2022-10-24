@@ -1442,8 +1442,9 @@
     }
 
     .slideView {
-        width: 82vw;
+        min-width: 83vw;
         padding-left: 5vw;
+        padding-right: 2vw;
         overflow-y: auto;
         height: 80vh;
         display: flex;
